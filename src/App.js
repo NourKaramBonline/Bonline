@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
-    faBars, faCode, faPaintBrush, faMobile, faChartLine, 
+    faBars, faShoppingCart, faServer, faMobile, faChartLine, 
     faEnvelope, faMapMarkerAlt, faPhone, faHeart, faArrowUp, faArrowRight, faExternalLinkAlt 
 } from '@fortawesome/free-solid-svg-icons';
 import { 
@@ -125,18 +125,18 @@ function App() {
                                         <div className="col-md-4 mb-4">
                                             <div className="card service-card h-100">
                                                 <div className="card-body text-center">
-                                                    <FontAwesomeIcon icon={faCode} className="service-icon mb-3" />
-                                                    <h5 className="card-title">Web Development</h5>
-                                                    <p className="card-text">Custom web applications tailored to your needs.</p>
+                                                    <FontAwesomeIcon icon={faShoppingCart} className="service-icon mb-3" />
+                                                    <h5 className="card-title">E-commerce Solutions Packages</h5>
+                                                    <p className="card-text">Custom e-commerce websites and platforms.</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className="col-md-4 mb-4">
                                             <div className="card service-card h-100">
                                                 <div className="card-body text-center">
-                                                    <FontAwesomeIcon icon={faPaintBrush} className="service-icon mb-3" />
-                                                    <h5 className="card-title">UI/UX Design</h5>
-                                                    <p className="card-text">Beautiful and intuitive user interfaces.</p>
+                                                    <FontAwesomeIcon icon={faServer} className="service-icon mb-3" />
+                                                    <h5 className="card-title">Hosting Solutions Packages</h5>
+                                                    <p className="card-text">Reliable and secure web hosting services.</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -144,7 +144,7 @@ function App() {
                                             <div className="card service-card h-100">
                                                 <div className="card-body text-center">
                                                     <FontAwesomeIcon icon={faMobile} className="service-icon mb-3" />
-                                                    <h5 className="card-title">Mobile Development</h5>
+                                                    <h5 className="card-title">Mobile Apps Packages</h5>
                                                     <p className="card-text">iOS and Android app development.</p>
                                                 </div>
                                             </div>

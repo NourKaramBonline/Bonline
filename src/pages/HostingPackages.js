@@ -2,8 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faStar, faTimes } from '@fortawesome/free-solid-svg-icons';
 
-const EcommercePackages = () => {
-    const packages = [
+const HostingPackages = () => {
+    const packagesTwo = [
         {
             name: 'Basic Package',
             price: 'Approximately 25,000 EGP',
@@ -84,7 +84,7 @@ const EcommercePackages = () => {
                 <p className="text-center mb-5">Choose the perfect package for your online business needs</p>
                 
                 <div className="row justify-content-center">
-                    {packages.map((pkg, index) => (
+                    {packagesTwo.map((pkg, index) => (
                         <div className="col-md-4 mb-4" key={index}>
                             <div className={`card package-card package-${index + 1} ${pkg.recommended ? 'recommended' : ''}`}>
                                 {pkg.recommended && (
@@ -114,4 +114,4 @@ const EcommercePackages = () => {
     );
 };
 
-export default EcommercePackages;
+export default HostingPackages;

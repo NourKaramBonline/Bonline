@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faStar, faTimes } from '@fortawesome/free-solid-svg-icons';
 
-const EcommercePackages = () => {
+const DigitalMarketingIntegrationSEOPackages = () => {
     const packages = [
         {
             name: 'Basic Package',
@@ -114,4 +114,4 @@ const EcommercePackages = () => {
     );
 };
 
-export default EcommercePackages;
+export default DigitalMarketingIntegrationSEOPackages;

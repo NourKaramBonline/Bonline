@@ -142,7 +142,12 @@ function App() {
                                                 <div className="card-body text-center">
                                                     <FontAwesomeIcon icon={faServer} className="service-icon mb-3" />
                                                     <h5 className="card-title">Hosting Solutions Packages</h5>
-                                                    <button className='btn btn-outline-primary'>Learn More</button>
+                                                    <button 
+                                                        className='btn btn-outline-primary'
+                                                        onClick={() => history.push('/hosting-packages')}
+                                                    >
+                                                        Learn More
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -151,7 +156,12 @@ function App() {
                                                 <div className="card-body text-center">
                                                     <FontAwesomeIcon icon={faMobile} className="service-icon mb-3" />
                                                     <h5 className="card-title">Mobile Apps Packages</h5>
-                                                    <button className='btn btn-outline-primary'>Learn More</button>
+                                                    <button 
+                                                        className='btn btn-outline-primary'
+                                                        onClick={() => history.push('/mobile-apps-packages')}
+                                                    >
+                                                        Learn More
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -160,7 +170,12 @@ function App() {
                                                 <div className="card-body text-center">
                                                     <FontAwesomeIcon icon={faBullhorn} className="service-icon mb-3" />
                                                     <h5 className="card-title">Digital Marketing Integration & SEO Packages</h5>
-                                                    <button className='btn btn-outline-primary'>Learn More</button>
+                                                    <button 
+                                                        className='btn btn-outline-primary'
+                                                        onClick={() => history.push('/digital-marketing-integration-seo-packages')}
+                                                    >
+                                                        Learn More
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -266,7 +281,7 @@ function App() {
                                             <div className="card contact-info h-100">
                                                 <div className="card-body">
                                                     <h5 className="mb-4">Get in Touch</h5>
-                                                    <p><FontAwesomeIcon icon={faMapMarkerAlt} className="me-2" /> 123 Business Street, NY 10001</p>
+                                                    <p><FontAwesomeIcon icon={faMapMarkerAlt} className="me-2" /> No. 167 Ali Al-Sebaei Street, Al-Yasmine 4, first floor above ground, Apartment 2, Intercom No. 2, in front of the Fuel Up gas station and the police academy fence. First assembly</p>
                                                     <p><FontAwesomeIcon icon={faPhone} className="me-2" /> 01 008985681</p>
                                                     <p><FontAwesomeIcon icon={faEnvelope} className="me-2" /> info@bonline.cc</p>
                                                 </div>

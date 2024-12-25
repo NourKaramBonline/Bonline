@@ -45,6 +45,18 @@ const Clients = () => {
             logo: itc4uLogo,
             description: 'Business Website',
             url: 'https://itc-4u.com'
+        },
+        {
+            name: 'Khabeer Tech',
+            logo: 'https://khabeer-tech.com/wp-content/uploads/2023/06/khabeer-tech-logo.png',
+            description: 'Technology Solutions',
+            url: 'https://khabeer-tech.com'
+        },
+        {
+            name: 'Bnaia',
+            logo: 'https://bnaia.com/wp-content/uploads/2023/12/bnaia-logo.png',
+            description: 'Construction Services',
+            url: 'https://bnaia.com'
         }
     ];
 
@@ -56,7 +68,15 @@ const Clients = () => {
                     <div className="col-md-4 mb-4" key={index}>
                         <div className="card portfolio-card h-100">
                             <div className="card-body">
-                                <img src={client.logo} alt={`${client.name} Logo`} className="portfolio-logo" />
+                                <img 
+                                    src={typeof client.logo === 'string' ? client.logo : client.logo} 
+                                    alt={`${client.name} Logo`} 
+                                    className="portfolio-logo"
+                                    onError={(e) => {
+                                        e.target.onerror = null;
+                                        e.target.src = `https://www.google.com/s2/favicons?domain=${client.url}&sz=128`;
+                                    }}
+                                />
                                 <h5 className="card-title">{client.name}</h5>
                                 <p className="card-text">{client.description}</p>
                                 <a href={client.url} className="portfolio-link" target="_blank" rel="noopener noreferrer">

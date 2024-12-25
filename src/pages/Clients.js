@@ -49,29 +49,25 @@ const Clients = () => {
     ];
 
     return (
-        <main>
-            <section className="section clients-section">
-                <div className="container">
-                    <h1 className="section-title text-center mb-5">Our Clients</h1>
-                    <div className="row g-4">
-                        {clients.map((client, index) => (
-                            <div className="col-md-4 mb-4" key={index}>
-                                <div className="card portfolio-card h-100">
-                                    <div className="card-body">
-                                        <img src={client.logo} alt={`${client.name} Logo`} className="portfolio-logo" />
-                                        <h5 className="card-title">{client.name}</h5>
-                                        <p className="card-text">{client.description}</p>
-                                        <a href={client.url} className="portfolio-link" target="_blank" rel="noopener noreferrer">
-                                            Visit Website <FontAwesomeIcon icon={faExternalLinkAlt} />
-                                        </a>
-                                    </div>
-                                </div>
+        <div className="container py-5 mt-5">
+            <h1 className="section-title text-center mb-5">Our Clients</h1>
+            <div className="row g-4">
+                {clients.map((client, index) => (
+                    <div className="col-md-4 mb-4" key={index}>
+                        <div className="card portfolio-card h-100">
+                            <div className="card-body">
+                                <img src={client.logo} alt={`${client.name} Logo`} className="portfolio-logo" />
+                                <h5 className="card-title">{client.name}</h5>
+                                <p className="card-text">{client.description}</p>
+                                <a href={client.url} className="portfolio-link" target="_blank" rel="noopener noreferrer">
+                                    Visit Website <FontAwesomeIcon icon={faExternalLinkAlt} />
+                                </a>
                             </div>
-                        ))}
+                        </div>
                     </div>
-                </div>
-            </section>
-        </main>
+                ))}
+            </div>
+        </div>
     );
 };
 

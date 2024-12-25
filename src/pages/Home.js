@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
     faCode, faPaintBrush, faMobile, faChartLine, 
@@ -13,6 +13,7 @@ import internationalElevateLogo from '../assets/images/internationalElevatorlogo
 import itc4uLogo from '../assets/images/itc4uLogoNew.svg';
 
 const Home = () => {
+    const history = useHistory();
     const featuredClients = [
         {
             name: 'Meercato',
@@ -72,9 +73,12 @@ const Home = () => {
                         ))}
                     </div>
                     <div className="text-center mt-5">
-                        <Link to="/clients" className="btn btn-outline-primary more-btn">
+                        <button 
+                            className="btn btn-outline-primary more-btn"
+                            onClick={() => history.push('/clients')}
+                        >
                             More <FontAwesomeIcon icon={faArrowRight} className="ms-2" />
-                        </Link>
+                        </button>
                     </div>
                 </div>
             </section>

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
-    faBars, faShoppingCart, faServer, faMobile, faChartLine, 
+    faBars, faShoppingCart, faServer, faMobile, faChartLine, faBullhorn,
     faEnvelope, faMapMarkerAlt, faPhone, faHeart, faArrowUp, faArrowRight, faExternalLinkAlt 
 } from '@fortawesome/free-solid-svg-icons';
 import { 
@@ -122,7 +122,7 @@ function App() {
                                 <div className="container">
                                     <h2 className="text-center mb-5">Our Services</h2>
                                     <div className="row">
-                                        <div className="col-md-4 mb-4">
+                                        <div className="col-md-3 mb-4">
                                             <div className="card service-card h-100">
                                                 <div className="card-body text-center">
                                                     <FontAwesomeIcon icon={faShoppingCart} className="service-icon mb-3" />
@@ -131,7 +131,7 @@ function App() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-md-4 mb-4">
+                                        <div className="col-md-3 mb-4">
                                             <div className="card service-card h-100">
                                                 <div className="card-body text-center">
                                                     <FontAwesomeIcon icon={faServer} className="service-icon mb-3" />
@@ -140,12 +140,21 @@ function App() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-md-4 mb-4">
+                                        <div className="col-md-3 mb-4">
                                             <div className="card service-card h-100">
                                                 <div className="card-body text-center">
                                                     <FontAwesomeIcon icon={faMobile} className="service-icon mb-3" />
                                                     <h5 className="card-title">Mobile Apps Packages</h5>
                                                     <p className="card-text">iOS and Android app development.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-3 mb-4">
+                                            <div className="card service-card h-100">
+                                                <div className="card-body text-center">
+                                                    <FontAwesomeIcon icon={faBullhorn} className="service-icon mb-3" />
+                                                    <h5 className="card-title">Digital Marketing Packages</h5>
+                                                    <p className="card-text">SEO, social media, and online advertising solutions.</p>
                                                 </div>
                                             </div>
                                         </div>

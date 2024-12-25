@@ -701,3 +701,83 @@ body {
 .client-card .btn-primary {
     margin-top: 1rem;
 }
+
+/* E-commerce Packages Section */
+.ecommerce-packages-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 80px 0;
+}
+
+.package-card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.package-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.package-card.recommended {
+    border: 2px solid #0d6efd;
+    position: relative;
+}
+
+.recommended-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #0d6efd;
+    color: white;
+    padding: 8px 15px;
+    border-bottom-left-radius: 15px;
+    font-size: 0.9rem;
+}
+
+.package-card .card-title {
+    color: #0d6efd;
+    font-weight: 600;
+}
+
+.package-card .price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #212529;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.feature-list li:last-child {
+    border-bottom: none;
+}
+
+.package-card .btn {
+    font-weight: 600;
+    padding: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.package-1 {
+    height: 600px;
+}
+
+.package-2 {
+    height: 650px;
+}
+
+.package-3 {
+    height: 700px;
+}

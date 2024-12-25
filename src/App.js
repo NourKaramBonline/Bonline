@@ -16,6 +16,7 @@ import project4Logo from './assets/images/caldConnectLogo.jpg';
 import project5Logo from './assets/images/internationalElevatorlogo.jpg';
 import itc4uLogo from './assets/images/itc4uLogoNew.jpg';
 import Clients from './pages/Clients';
+import EcommercePackages from './pages/EcommercePackages';
 import Layout from './components/Layout';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
@@ -127,7 +128,12 @@ function App() {
                                                 <div className="card-body text-center">
                                                     <FontAwesomeIcon icon={faShoppingCart} className="service-icon mb-3" />
                                                     <h5 className="card-title">E-commerce Solutions Packages</h5>
-                                                    <button className='btn btn-outline-primary'>Learn More</button>
+                                                    <button 
+                                                        className='btn btn-outline-primary'
+                                                        onClick={() => history.push('/ecommerce-packages')}
+                                                    >
+                                                        Learn More
+                                                    </button>
                                                 </div>
                                             </div>
                                         </div>
@@ -298,6 +304,7 @@ function App() {
                         </div>
                     )} />
                     <Route path="/clients" component={Clients} />
+                    <Route path="/ecommerce-packages" component={EcommercePackages} />
                 </Switch>
             </Layout>
         </div>

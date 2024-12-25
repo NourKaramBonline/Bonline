@@ -127,7 +127,7 @@ function App() {
                                                 <div className="card-body text-center">
                                                     <FontAwesomeIcon icon={faShoppingCart} className="service-icon mb-3" />
                                                     <h5 className="card-title">E-commerce Solutions Packages</h5>
-                                                    <p className="card-text">Custom e-commerce websites and platforms.</p>
+                                                    <button className='btn btn-outline-primary'>Learn More</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -136,7 +136,7 @@ function App() {
                                                 <div className="card-body text-center">
                                                     <FontAwesomeIcon icon={faServer} className="service-icon mb-3" />
                                                     <h5 className="card-title">Hosting Solutions Packages</h5>
-                                                    <p className="card-text">Reliable and secure web hosting services.</p>
+                                                    <button className='btn btn-outline-primary'>Learn More</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -145,7 +145,7 @@ function App() {
                                                 <div className="card-body text-center">
                                                     <FontAwesomeIcon icon={faMobile} className="service-icon mb-3" />
                                                     <h5 className="card-title">Mobile Apps Packages</h5>
-                                                    <p className="card-text">iOS and Android app development.</p>
+                                                    <button className='btn btn-outline-primary'>Learn More</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -153,19 +153,13 @@ function App() {
                                             <div className="card service-card h-100">
                                                 <div className="card-body text-center">
                                                     <FontAwesomeIcon icon={faBullhorn} className="service-icon mb-3" />
-                                                    <h5 className="card-title">Digital Marketing Packages</h5>
-                                                    <p className="card-text">SEO, social media, and online advertising solutions.</p>
+                                                    <h5 className="card-title">Digital Marketing Integration & SEO Packages</h5>
+                                                    <button className='btn btn-outline-primary'>Learn More</button>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div className="text-center mt-4">
-                                        <button 
-                                            className="btn btn-outline-primary more-btn"
-                                            onClick={() => history.push('/clients')}
-                                        >
-                                            More <FontAwesomeIcon icon={faArrowRight} className="ms-2" />
-                                        </button>
                                     </div>
                                 </div>
                             </section>

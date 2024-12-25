@@ -1,12 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
-import meercatoLogo from '../assets/images/Meercato_logo-New.svg';
-import petrokassLogo from '../assets/images/petrokassLogoNew.png';
-import chichomeLogo from '../assets/images/ChichomeBoutiqueLogoNew.svg';
+import meercatoLogo from '../assets/images/Meercato_logo-New.jpg';
+import petrokassLogo from '../assets/images/petrokassLogoNew.jpg';
+import chichomeLogo from '../assets/images/ChichomeBoutiqueLogoNew.jpg';
 import caldConnectLogo from '../assets/images/caldConnectLogo.jpg';
-import internationalElevateLogo from '../assets/images/internationalElevatorlogo.svg';
-import itc4uLogo from '../assets/images/itc4uLogoNew.svg';
+import internationalElevateLogo from '../assets/images/internationalElevatorlogo.jpg';
+import itc4uLogo from '../assets/images/itc4uLogoNew.jpg';
 
 const Clients = () => {
     const clients = [

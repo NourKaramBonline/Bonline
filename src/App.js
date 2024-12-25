@@ -9,12 +9,12 @@ import {
     faGithub 
 } from '@fortawesome/free-brands-svg-icons';
 import logo from './assets/images/bonline-logo-en.svg';
-import meercatoLogo from './assets/images/Meercato_logo-New.svg';
-import petrokassLogo from './assets/images/petrokassLogoNew.png';
-import project3Logo from './assets/images/ChichomeBoutiqueLogoNew.svg';
+import meercatoLogo from './assets/images/Meercato_logo-New.jpg';
+import petrokassLogo from './assets/images/petrokassLogoNew.jpg';
+import project3Logo from './assets/images/ChichomeBoutiqueLogoNew.jpg';
 import project4Logo from './assets/images/caldConnectLogo.jpg';
-import project5Logo from './assets/images/internationalElevatorlogo.svg';
-import itc4uLogo from './assets/images/itc4uLogoNew.svg';
+import project5Logo from './assets/images/internationalElevatorlogo.jpg';
+import itc4uLogo from './assets/images/itc4uLogoNew.jpg';
 import Clients from './pages/Clients';
 import Layout from './components/Layout';
 import 'bootstrap/dist/css/bootstrap.min.css';

@@ -15,6 +15,7 @@ import project3Logo from './assets/images/ChichomeBoutiqueLogoNew.svg';
 import project4Logo from './assets/images/caldConnectLogo.jpg';
 import project5Logo from './assets/images/internationalElevatorlogo.svg';
 import itc4uLogo from './assets/images/itc4uLogoNew.svg';
+import Clients from './components/Clients';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import { Route, Switch, useHistory } from 'react-router-dom';
@@ -389,11 +390,7 @@ function App() {
                         </button>
                     </div>
                 )} />
-                <Route path="/clients" render={() => (
-                    <div>
-                        <h1>Clients Page</h1>
-                    </div>
-                )} />
+                <Route path="/clients" component={Clients} />
             </Switch>
         </div>
     );

@@ -67,36 +67,6 @@ function App() {
                 <Switch>
                     <Route exact path="/" render={() => (
                         <div>
-                            <nav className={`navbar navbar-expand-lg navbar-dark fixed-top ${scrolled ? 'scrolled' : ''}`}>
-                                <div className="container">
-                                    <a className="navbar-brand" href="#home">
-                                        <img src={logo} alt="Bonline Logo" className="navbar-logo" />
-                                    </a>
-                                    <button className="navbar-toggler" onClick={toggleMenu}>
-                                        <FontAwesomeIcon icon={faBars} />
-                                    </button>
-                                    <div className={`collapse navbar-collapse ${isMenuOpen ? 'show' : ''}`}>
-                                        <ul className="navbar-nav ms-auto">
-                                            <li className="nav-item">
-                                                <button onClick={() => scrollToSection('home')} className="nav-link">Home</button>
-                                            </li>
-                                            <li className="nav-item">
-                                                <button onClick={() => scrollToSection('about')} className="nav-link">About</button>
-                                            </li>
-                                            <li className="nav-item">
-                                                <button onClick={() => scrollToSection('services')} className="nav-link">Services</button>
-                                            </li>
-                                            <li className="nav-item">
-                                                <button onClick={() => scrollToSection('portfolio')} className="nav-link">Portfolio</button>
-                                            </li>
-                                            <li className="nav-item">
-                                                <button onClick={() => scrollToSection('contact')} className="nav-link">Contact</button>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </nav>
-
                             <section id="home" className="section home-section">
                                 <div className="container text-center">
                                     <h1 className="display-4">Welcome to Our Creative Studio</h1>

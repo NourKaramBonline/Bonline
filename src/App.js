@@ -99,7 +99,7 @@ function App() {
                                         <div className="col-md-6">
                                             <h2 className="section-title">About B-Online</h2>
                                             <p className="lead mb-4">
-                                                Established in 2020, B-Online is a leading technology solutions provider based in Egypt, 
+                                                Established in 2013, B-Online is a leading technology solutions provider based in Egypt, 
                                                 delivering innovative digital solutions to businesses worldwide.
                                             </p>
                                             <div className="about-content">
@@ -147,37 +147,6 @@ function App() {
                                                             <h3>99.9%</h3>
                                                             <p>Uptime Guarantee</p>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="row mt-5">
-                                        <div className="col-12">
-                                            <h4 className="text-center mb-4">Our Expertise</h4>
-                                            <div className="row">
-                                                <div className="col-md-3 col-sm-6 mb-4">
-                                                    <div className="expertise-box text-center">
-                                                        <h5>Web Development</h5>
-                                                        <p>Custom websites, e-commerce platforms, and web applications</p>
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-3 col-sm-6 mb-4">
-                                                    <div className="expertise-box text-center">
-                                                        <h5>Hosting Solutions</h5>
-                                                        <p>VPS, reseller, and dedicated hosting services</p>
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-3 col-sm-6 mb-4">
-                                                    <div className="expertise-box text-center">
-                                                        <h5>Mobile Development</h5>
-                                                        <p>iOS and Android app development</p>
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-3 col-sm-6 mb-4">
-                                                    <div className="expertise-box text-center">
-                                                        <h5>Digital Marketing</h5>
-                                                        <p>SEO, social media, and digital integration</p>
                                                     </div>
                                                 </div>
                                             </div>

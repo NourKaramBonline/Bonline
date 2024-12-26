@@ -133,6 +133,7 @@ function App() {
                                                 <div className="card-body text-center">
                                                     <FontAwesomeIcon icon={faShoppingCart} className="service-icon mb-3" />
                                                     <h5 className="card-title">E-commerce Solutions Packages</h5>
+                                                    <p>We offer a wide range of e-commerce solutions to help businesses grow and succeed online.</p>
                                                     <button 
                                                         className='btn btn-outline-primary'
                                                         onClick={() => history.push('/ecommerce-packages')}
@@ -147,6 +148,7 @@ function App() {
                                                 <div className="card-body text-center">
                                                     <FontAwesomeIcon icon={faServer} className="service-icon mb-3" />
                                                     <h5 className="card-title">Hosting Packages</h5>
+                                                    <p>Choose from a range of hosting packages to fit your needs and budget.</p>
                                                     <button 
                                                         className='btn btn-outline-primary'
                                                         onClick={() => history.push('/hosting-packages')}
@@ -161,6 +163,7 @@ function App() {
                                                 <div className="card-body text-center">
                                                     <FontAwesomeIcon icon={faBullseye} className="service-icon mb-3" />
                                                     <h5 className="card-title">Digital Marketing Integration</h5>
+                                                    <p>Enhance your online presence with our digital marketing integration services.</p>
                                                     <button 
                                                         className='btn btn-outline-primary'
                                                         onClick={() => history.push('/digital-marketing-integration-seo-packages')}
@@ -175,6 +178,7 @@ function App() {
                                                 <div className="card-body text-center">
                                                     <FontAwesomeIcon icon={faMobile} className="service-icon mb-3" />
                                                     <h5 className="card-title">Mobile App Development</h5>
+                                                    <p>Develop mobile apps for iOS and Android platforms.</p>
                                                     <button 
                                                         className='btn btn-outline-primary'
                                                         onClick={() => history.push('/mobile-apps-packages')}
@@ -189,6 +193,7 @@ function App() {
                                                 <div className="card-body text-center">
                                                     <FontAwesomeIcon icon={faCode} className="service-icon mb-3" />
                                                     <h5 className="card-title">Custom Software Development</h5>
+                                                    <p>Create custom software solutions to meet your specific needs.</p>
                                                     <button 
                                                         className='btn btn-outline-primary'
                                                         onClick={() => history.push('/custom-software-packages')}

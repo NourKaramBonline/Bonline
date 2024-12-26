@@ -1,109 +1,123 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheck, faStar, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { useHistory } from 'react-router-dom';
+import styles from './MobileAppPackages.module.css';
 
 const MobileAppPackages = () => {
+    const history = useHistory();
+
+    const handleLearnMore = () => {
+        history.push('/#about');
+        const aboutSection = document.getElementById('about');
+        if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     const packages = [
         {
-            name: 'Basic Package',
-            price: 'Approximately 25,000 EGP',
+            name: 'Basic Mobile App Package',
+            price: '25,000 EGP',
+            color: 'blue',
             features: [
-                'Custom responsive design compatible with all devices',
-                'Unlimited product listings',
-                'Integration with one payment gateway (e.g., PayPal, Stripe)',
-                'Basic shipping options configuration',
-                'User-friendly Content Management System (CMS)',
-                'Basic SEO optimization',
-                '1-year hosting (10 GB SSD storage, unlimited bandwidth)',
-                'Free domain registration for 1 year',
-                '1-month post-launch support'
-            ],
-            unsupportedFeatures: [
-                'Advanced shopping cart with discount and coupon functionalities',
-                'Integration with multiple payment gateways',
-                'Comprehensive shipping options and tax configurations',
-                'Inventory management system',
-                'Enhanced SEO optimization',
-                'Integration with social media platforms',
-                '3 months of post-launch support'
-            ],
-            recommended: false
+                { name: 'UI/UX Design', status: 'Basic responsive design' },
+                { name: 'Platform Support', status: 'Single platform (Android or iOS)' },
+                { name: 'User Authentication', status: true },
+                { name: 'Push Notifications', status: 'Basic notifications' },
+                { name: 'Data Storage', status: 'Local storage' },
+                { name: 'API Integration', status: 'Basic REST API integration' },
+                { name: 'Offline Mode', status: false },
+                { name: 'Analytics Integration', status: 'Basic app analytics' },
+                { name: 'Social Media Integration', status: false },
+                { name: 'In-App Purchases', status: false },
+                { name: 'App Store Optimization', status: true },
+                { name: 'Performance Monitoring', status: 'Basic monitoring' },
+                { name: 'Security Features', status: 'Standard security' },
+                { name: 'Support & Maintenance', status: '1 month support' }
+            ]
         },
         {
-            name: 'Standard Package',
-            price: 'Approximately 40,000 EGP',
+            name: 'Standard Mobile App Package',
+            price: '40,000 EGP',
+            color: 'green',
             features: [
-                'Custom responsive design with enhanced UI/UX elements',
-                'Unlimited product listings',
-                'Advanced shopping cart with discount and coupon functionalities',
-                'Integration with multiple payment gateways',
-                'Comprehensive shipping options and tax configurations',
-                'Inventory management system',
-                'Enhanced SEO optimization',
-                'Integration with social media platforms',
-                'Integration with social media platforms',
-                'Free domain registration for 1 year',
-                '3 months of post-launch support'
-            ],
-            unsupportedFeatures: [
-                'Bespoke responsive design with advanced UI/UX elements',
-                'Advanced shopping cart with personalized recommendations',
-                'Integration with CRM and email marketing tools',
-                'Training session on website management',
-                '1-year hosting (50 GB SSD storage, unlimited bandwidth)',
-                '6 months of post-launch support'
-            ],
-            recommended: true
+                { name: 'UI/UX Design', status: 'Advanced UI with animations' },
+                { name: 'Platform Support', status: 'Cross-platform (Android & iOS)' },
+                { name: 'User Authentication', status: true },
+                { name: 'Push Notifications', status: 'Advanced notifications' },
+                { name: 'Data Storage', status: 'Cloud storage integration' },
+                { name: 'API Integration', status: 'Multiple API integrations' },
+                { name: 'Offline Mode', status: true },
+                { name: 'Analytics Integration', status: 'Advanced analytics' },
+                { name: 'Social Media Integration', status: true },
+                { name: 'In-App Purchases', status: true },
+                { name: 'App Store Optimization', status: true },
+                { name: 'Performance Monitoring', status: 'Advanced monitoring' },
+                { name: 'Security Features', status: 'Enhanced security' },
+                { name: 'Support & Maintenance', status: '3 months support' }
+            ]
         },
         {
-            name: 'Premium Package',
-            price: 'Approximately 60,000 EGP',
+            name: 'Premium Mobile App Package',
+            price: '60,000 EGP',
+            color: 'red',
             features: [
-                'Bespoke responsive design with advanced UI/UX elements',
-                'Unlimited product listings',
-                'Advanced shopping cart with personalized recommendations',
-                'Integration with multiple payment gateways and methods',
-                'Comprehensive shipping, tax, and inventory management',
-                'Customer account management and order tracking',
-                'Blog or news section',
-                'Comprehensive SEO and performance optimization',
-                'Integration with CRM and email marketing tools',
-                'Training session on website management',
-                '1-year hosting (50 GB SSD storage, unlimited bandwidth)',
-                'Free domain registration for 1 year',
-                '6 months of post-launch support'
-            ],
-            recommended: false
+                { name: 'UI/UX Design', status: 'Premium UI with custom animations' },
+                { name: 'Platform Support', status: 'Native apps for all platforms' },
+                { name: 'User Authentication', status: true },
+                { name: 'Push Notifications', status: 'Custom notification system' },
+                { name: 'Data Storage', status: 'Advanced cloud infrastructure' },
+                { name: 'API Integration', status: 'Custom API development' },
+                { name: 'Offline Mode', status: true },
+                { name: 'Analytics Integration', status: 'Custom analytics dashboard' },
+                { name: 'Social Media Integration', status: true },
+                { name: 'In-App Purchases', status: true },
+                { name: 'App Store Optimization', status: true },
+                { name: 'Performance Monitoring', status: 'Real-time monitoring' },
+                { name: 'Security Features', status: 'Enterprise-grade security' },
+                { name: 'Support & Maintenance', status: '6 months premium support' }
+            ]
         }
     ];
 
     return (
-        <div className="ecommerce-packages-section py-5">
-            <div className="container">
-                <h2 className="text-center mb-5">E-commerce Solutions Packages</h2>
-                <p className="text-center mb-5">Choose the perfect package for your online business needs</p>
-                
+        <div className={styles.packagesContainer}>
+            <div className="container py-5">
+                <h2 className={styles.sectionTitle}>Mobile App Development Packages</h2>
                 <div className="row justify-content-center">
                     {packages.map((pkg, index) => (
-                        <div className="col-md-4 mb-4" key={index}>
-                            <div className={`card package-card package-${index + 1} ${pkg.recommended ? 'recommended' : ''}`}>
-                                {pkg.recommended && (
-                                    <div className="recommended-badge">
-                                        <FontAwesomeIcon icon={faStar} /> Most Popular
-                                    </div>
-                                )}
-                                <div className="card-body">
-                                    <h3 className="card-title text-center mb-4">{pkg.name}</h3>
-                                    <h4 className="price text-center mb-4">{pkg.price}</h4>
-                                    <ul className="feature-list">
+                        <div className="col-lg-4 col-md-6 mb-4" key={index}>
+                            <div className={`${styles.packageCard} ${styles[`package${pkg.color}`]}`}>
+                                <div className={styles.packageHeader}>
+                                    <h3 className={styles.packageTitle}>{pkg.name}</h3>
+                                    <div className={styles.packagePrice}>{pkg.price}</div>
+                                </div>
+                                <div className={styles.packageContent}>
+                                    <div className={styles.featuresList}>
                                         {pkg.features.map((feature, idx) => (
-                                            <li key={idx}>
-                                                <FontAwesomeIcon icon={faCheck} className="me-2 text-success" />
-                                                {feature}
-                                            </li>
+                                            <div key={idx} className={styles.featureItem}>
+                                                {feature.status === true ? (
+                                                    <span className={styles.checkIcon}>
+                                                        <FontAwesomeIcon icon={faCheck} />
+                                                    </span>
+                                                ) : feature.status === false ? (
+                                                    <span className={styles.timesIcon}>
+                                                        <FontAwesomeIcon icon={faTimes} />
+                                                    </span>
+                                                ) : (
+                                                    <span className={styles.featureValue}>{feature.status}</span>
+                                                )}
+                                                {feature.name}
+                                            </div>
                                         ))}
-                                    </ul>
-                                    <button className="btn btn-primary w-100 mt-4">Get Started</button>
+                                    </div>
+                                    <button 
+                                        className={`${styles.buyButton} ${styles[`btn${pkg.color}`]}`}
+                                        onClick={handleLearnMore}
+                                    >
+                                        Learn More
+                                    </button>
                                 </div>
                             </div>
                         </div>

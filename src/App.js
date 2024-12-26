@@ -19,6 +19,7 @@ import Clients from './pages/Clients';
 import EcommercePackages from './pages/EcommercePackages';
 import HostingPackages from './pages/HostingPackages';
 import DigitalMarketingIntegrationSEOPackages from './pages/DigitalMarketingIntegrationSEOPackages';
+import MobileAppPackages from './pages/MobileAppPackages';
 import Layout from './components/Layout';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
@@ -324,6 +325,7 @@ function App() {
                     <Route path="/ecommerce-packages" component={EcommercePackages} />
                     <Route path="/hosting-packages" component={HostingPackages} />
                     <Route path="/digital-marketing-integration-seo-packages" component={DigitalMarketingIntegrationSEOPackages} />
+                    <Route path="/mobile-apps-packages" component={MobileAppPackages} />
                 </Switch>
             </Layout>
         </div>

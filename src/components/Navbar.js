@@ -58,6 +58,17 @@ const Navbar = () => {
                         <li className="nav-item">
                             <Link className="nav-link" to="/" onClick={() => scrollToSection('services')}>Services</Link>
                         </li>
+                        <li className="nav-item dropdown">
+                            <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown">
+                                Packages
+                            </Link>
+                            <ul className="dropdown-menu">
+                                <li><Link className="dropdown-item" to="/ecommerce-packages">E-commerce</Link></li>
+                                <li><Link className="dropdown-item" to="/hosting-packages">Hosting</Link></li>
+                                <li><Link className="dropdown-item" to="/digital-marketing-integration-seo-packages">Digital Marketing</Link></li>
+                                <li><Link className="dropdown-item" to="/mobile-apps-packages">Mobile Apps</Link></li>
+                            </ul>
+                        </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/clients">Clients</Link>
                         </li>

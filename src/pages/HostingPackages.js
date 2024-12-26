@@ -8,10 +8,10 @@ const HostingPackages = () => {
     const history = useHistory();
 
     const handleLearnMore = () => {
-        history.push('/#about');
-        const aboutSection = document.getElementById('about');
-        if (aboutSection) {
-            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        history.push('/#contact');
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
         }
     };
 

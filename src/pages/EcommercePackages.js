@@ -8,11 +8,10 @@ const EcommercePackages = () => {
     const history = useHistory();
 
     const handleLearnMore = () => {
-        history.push('/#about');
-        // Smooth scroll to about section after navigation
-        const aboutSection = document.getElementById('about');
-        if (aboutSection) {
-            aboutSection.scrollIntoView({ behavior: 'smooth' });
+        history.push('/#contact');
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
         }
     };
 

@@ -8,11 +8,13 @@ const ResellerHostingPackages = () => {
     const history = useHistory();
 
     const handleLearnMore = () => {
-        history.push('/#about');
-        const aboutSection = document.getElementById('about');
-        if (aboutSection) {
-            aboutSection.scrollIntoView({ behavior: 'smooth' });
-        }
+        history.push('/');
+        setTimeout(() => {
+            const contactSection = document.getElementById('contact');
+            if (contactSection) {
+                contactSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 100);
     };
 
     const packages = [

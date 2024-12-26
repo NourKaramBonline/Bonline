@@ -23,18 +23,18 @@ const DigitalMarketingIntegrationSEOPackages = () => {
             features: [
                 { name: 'Essential On-Page SEO', status: true },
                 { name: 'XML Sitemap and Robots.txt Setup', status: true },
-                { name: 'Basic Analytics Tools', status: 'Google Analytics, Search Console' },
-                { name: 'Traffic Monitoring', status: true },
-                { name: 'Social Media Integration', status: 'Facebook or Instagram' },
-                { name: 'Basic Email Marketing', status: 'Basic subscription form' },
-                { name: 'Standard Contact Forms', status: true },
                 { name: 'Structured Data (Schema.org)', status: false },
+                { name: 'Google Analytics', status: true },
+                { name: 'Traffic and Performance Monitoring', status: true },
                 { name: 'Custom Dashboards', status: false },
                 { name: 'E-commerce Tracking', status: false },
                 { name: 'Heatmaps and Session Replay', status: false },
                 { name: 'Advanced Reporting', status: false },
-                { name: 'Marketing Automation', status: false },
-                { name: 'PPC Advertising', status: false }
+                { name: 'Social Media Tools', status: 'Facebook or Instagram (one platform)' },
+                { name: 'Email Marketing Tools', status: 'Basic subscription form' },
+                { name: 'Standard contact form', status: true },
+                { name: 'Marketing Automation Tools', status: false },
+                { name: 'PPC Advertising Tools', status: false }
             ]
         },
         {
@@ -45,17 +45,17 @@ const DigitalMarketingIntegrationSEOPackages = () => {
                 { name: 'Essential On-Page SEO', status: true },
                 { name: 'XML Sitemap and Robots.txt Setup', status: true },
                 { name: 'Structured Data (Schema.org)', status: true },
-                { name: 'Basic Analytics Tools', status: 'GA, Search Console, Bing Tools' },
-                { name: 'Traffic Monitoring', status: true },
-                { name: 'Social Media Integration', status: 'Facebook, Instagram, Twitter' },
-                { name: 'Email Marketing', status: 'Mailchimp or Sendinblue' },
-                { name: 'Contact Forms', status: 'HubSpot or Zoho CRM forms' },
-                { name: 'Marketing Automation', status: 'Basic workflows' },
+                { name: 'Google Analytics', status: true },
+                { name: 'Traffic and Performance Monitoring', status: true },
                 { name: 'Custom Dashboards', status: false },
                 { name: 'E-commerce Tracking', status: false },
                 { name: 'Heatmaps and Session Replay', status: false },
                 { name: 'Advanced Reporting', status: false },
-                { name: 'PPC Advertising', status: false }
+                { name: 'Social Media Tools', status: 'Facebook, Instagram, Twitter' },
+                { name: 'Email Marketing Tools', status: 'Mailchimp or Sendinblue' },
+                { name: 'Lead capture contact forms', status: true },
+                { name: 'Marketing Automation Tools', status: true },
+                { name: 'PPC Advertising Tools', status: false }
             ]
         },
         {
@@ -65,18 +65,18 @@ const DigitalMarketingIntegrationSEOPackages = () => {
             features: [
                 { name: 'Essential On-Page SEO', status: true },
                 { name: 'XML Sitemap and Robots.txt Setup', status: true },
-                { name: 'Structured Data (Schema.org)', status: 'Advanced with Rich Snippets' },
-                { name: 'Analytics Tools', status: 'GA4, Tag Manager, Bing Tools' },
-                { name: 'Traffic Monitoring', status: true },
-                { name: 'Custom Dashboards', status: 'Custom GA4 Dashboards' },
+                { name: 'Structured Data (Schema.org)', status: true },
+                { name: 'Google Analytics', status: true },
+                { name: 'Traffic and Performance Monitoring', status: true },
+                { name: 'Custom Dashboards', status: true },
                 { name: 'E-commerce Tracking', status: true },
-                { name: 'Heatmaps and Session Replay', status: 'Hotjar or Microsoft Clarity' },
+                { name: 'Heatmaps and Session Replay', status: true },
                 { name: 'Advanced Reporting', status: true },
-                { name: 'Social Media Integration', status: 'FB, IG, Twitter, LinkedIn + Hootsuite' },
-                { name: 'Email Marketing', status: 'Advanced with personalization' },
-                { name: 'Contact Forms', status: 'Salesforce or HubSpot CRM' },
-                { name: 'Marketing Automation', status: 'Complex workflows' },
-                { name: 'PPC Advertising', status: 'Google Ads, Facebook Ads' }
+                { name: 'Social Media Tools', status: 'FB, IG, Twitter, LinkedIn + Hootsuite' },
+                { name: 'Email Marketing Tools', status: 'Advanced with personalization' },
+                { name: 'Dynamic lead capture contact forms', status: true },
+                { name: 'Marketing Automation Complex Tools', status: true },
+                { name: 'PPC Advertising Tools', status: true }
             ]
         }
     ];

@@ -75,10 +75,10 @@ function App() {
                 <Switch>
                     <Route exact path="/" render={() => (
                         <div>
-                            <section id="home" className="section home-section">
+                            <section id="home" className="hero-section">
                                 <div className="container text-center">
-                                    <h1 className="display-4">Welcome to Our Creative Studio</h1>
-                                    <p className="lead">We bring your digital dreams to life</p>
+                                    <h1 className="display-4">Welcome to B-Online</h1>
+                                    <p className="lead">Your Trusted Partner for Digital Excellence</p>
                                     <button 
                                         className="btn btn-danger btn-lg mt-4"
                                         onClick={() => {

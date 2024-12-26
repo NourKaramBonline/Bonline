@@ -499,7 +499,7 @@ body {
     left: 0;
     right: 0;
     height: 100px;
-    background: linear-gradient(to bottom right, #f6f9fc 49%, transparent 50%);
+    background: linear-gradient(to bottom right, #f6f9fc 49%, #3498db 50%);
 }
 
 .service-card {
@@ -1042,4 +1042,130 @@ body {
 
 .package-3 {
     height: 700px;
+}
+
+/* Enhanced Dropdown Menu Styles */
+.navbar .dropdown-menu {
+    background: rgba(30, 60, 114, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 1rem 0;
+    margin-top: 0.5rem;
+    min-width: 250px;
+    transition: all 0.3s ease;
+    transform: translateY(10px);
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Desktop Hover Effect */
+@media (min-width: 992px) {
+    .navbar .nav-item.dropdown:hover .dropdown-menu {
+        display: block;
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .navbar .nav-item.dropdown:hover .dropdown-toggle::after {
+        transform: rotate(180deg);
+    }
+}
+
+/* Mobile Click Effect */
+@media (max-width: 991px) {
+    .navbar .dropdown-menu {
+        background: transparent !important;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        transform: none;
+        opacity: 1;
+        visibility: visible;
+        display: none;
+    }
+    
+    .navbar .dropdown-menu.show {
+        display: block;
+    }
+    
+    .navbar .dropdown-item {
+        padding: 0.8rem 2rem !important;
+    }
+    
+    .navbar .dropdown-item:hover {
+        padding-left: 2.5rem !important;
+    }
+}
+
+.navbar .dropdown-menu .dropdown-item {
+    color: #ffffff !important;
+    padding: 0.8rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    opacity: 0.9;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item:focus {
+    background: rgba(52, 152, 219, 0.2) !important;
+    color: #3498db !important;
+    padding-left: 2rem;
+    opacity: 1;
+}
+
+.navbar .dropdown-menu .dropdown-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 4px;
+    height: 0;
+    background: #3498db;
+    transition: height 0.2s ease;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover::before {
+    height: 100%;
+}
+
+.navbar .dropdown-toggle::after {
+    margin-left: 0.4em;
+    vertical-align: 0.15em;
+    border-top: 0.4em solid;
+    border-right: 0.4em solid transparent;
+    border-left: 0.4em solid transparent;
+    transition: transform 0.2s ease;
+}
+
+.navbar .nav-item.dropdown.show .dropdown-toggle::after {
+    transform: rotate(180deg);
+}
+
+/* Remove default dropdown arrow */
+.navbar .nav-link.dropdown-toggle::after {
+    display: none;
+}
+
+/* Style the custom dropdown icon */
+.navbar .dropdown-icon {
+    font-size: 0.8em;
+    transition: transform 0.3s ease;
+}
+
+/* Rotate icon on hover/open */
+@media (min-width: 992px) {
+    .navbar .nav-item.dropdown:hover .dropdown-icon {
+        transform: rotate(180deg);
+    }
+}
+
+.navbar .nav-item.dropdown.show .dropdown-icon {
+    transform: rotate(180deg);
 }

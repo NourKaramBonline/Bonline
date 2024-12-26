@@ -1,20 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import logo from '../assets/images/bonline-logo-en.svg';
 
 const Navbar = () => {
     const [isNavCollapsed, setIsNavCollapsed] = useState(true);
     const [isScrolled, setIsScrolled] = useState(false);
+    const [isServicesOpen, setIsServicesOpen] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 992);
     const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolled(window.scrollY > 50);
         };
+
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 992);
+        };
+
         window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+        window.addEventListener('resize', handleResize);
+        
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+            window.removeEventListener('resize', handleResize);
+        };
     }, []);
 
     const scrollToSection = (sectionId) => {
@@ -31,6 +43,22 @@ const Navbar = () => {
                 top: offsetPosition,
                 behavior: 'smooth'
             });
+            setIsNavCollapsed(true);
+            setIsServicesOpen(false);
+        }
+    };
+
+    const toggleServices = (e) => {
+        if (isMobile) {
+            e.preventDefault();
+            setIsServicesOpen(!isServicesOpen);
+        }
+    };
+
+    const handleNavItemClick = () => {
+        if (isMobile) {
+            setIsNavCollapsed(true);
+            setIsServicesOpen(false);
         }
     };
 
@@ -55,11 +83,29 @@ const Navbar = () => {
                         <li className="nav-item">
                             <Link className="nav-link" to="/" onClick={() => scrollToSection('about')}>About</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/" onClick={() => scrollToSection('services')}>Services</Link>
+                        <li className={`nav-item dropdown ${isServicesOpen ? 'show' : ''}`}>
+                            <Link
+                                className="nav-link dropdown-toggle d-flex align-items-center"
+                                to="#"
+                                role="button"
+                                onClick={toggleServices}
+                                aria-expanded={isServicesOpen}
+                            >
+                                Services
+                                <FontAwesomeIcon icon={faChevronDown} className="ms-1 dropdown-icon" />
+                            </Link>
+                            <ul className={`dropdown-menu ${isServicesOpen ? 'show' : ''}`}>
+                                <li><Link className="dropdown-item" to="/ecommerce-packages" onClick={handleNavItemClick}>E-commerce Solutions Packages</Link></li>
+                                <li><Link className="dropdown-item" to="/hosting-packages" onClick={handleNavItemClick}>Hosting Packages</Link></li>
+                                <li><Link className="dropdown-item" to="/reseller-hosting-packages" onClick={handleNavItemClick}>Reseller Hosting</Link></li>
+                                <li><Link className="dropdown-item" to="/vps-hosting-packages" onClick={handleNavItemClick}>VPS Hosting</Link></li>
+                                <li><Link className="dropdown-item" to="/digital-marketing" onClick={handleNavItemClick}>Digital Marketing Integration</Link></li>
+                                <li><Link className="dropdown-item" to="/mobile-app-packages" onClick={handleNavItemClick}>Mobile App Development</Link></li>
+                                <li><Link className="dropdown-item" to="/custom-software-packages" onClick={handleNavItemClick}>Custom Software Development</Link></li>
+                            </ul>
                         </li>
                         <li className="nav-item">
-                        <Link className="nav-link" to="/" onClick={() => scrollToSection('portfolio')}>Clients</Link>
+                            <Link className="nav-link" to="/" onClick={() => scrollToSection('portfolio')}>Clients</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link" to="/" onClick={() => scrollToSection('contact')}>Contact</Link>

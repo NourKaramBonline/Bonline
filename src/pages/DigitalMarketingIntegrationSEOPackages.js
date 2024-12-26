@@ -84,7 +84,7 @@ const DigitalMarketingIntegrationSEOPackages = () => {
     return (
         <div className={styles.packagesContainer}>
             <div className="container py-5">
-                <h2 className={styles.sectionTitle}>Digital Marketing Integration & SEO Packages</h2>
+                <h2 className={styles.sectionTitle}>Digital Marketing Integration Packages</h2>
                 <div className="row justify-content-center">
                     {packages.map((pkg, index) => (
                         <div className="col-lg-4 col-md-6 mb-4" key={index}>

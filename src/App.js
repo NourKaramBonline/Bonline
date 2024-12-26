@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
-    faBars, faShoppingCart, faServer, faMobile, faChartLine, faBullhorn,
+    faBars, faShoppingCart, faServer, faMobile, faBullseye, faBullhorn,
     faEnvelope, faMapMarkerAlt, faPhone, faHeart, faArrowUp, faArrowRight, faExternalLinkAlt,
     faCode 
 } from '@fortawesome/free-solid-svg-icons';
@@ -159,8 +159,8 @@ function App() {
                                         <div className="col-md-3 mb-4">
                                             <div className="card service-card h-100">
                                                 <div className="card-body text-center">
-                                                    <FontAwesomeIcon icon={faChartLine} className="service-icon mb-3" />
-                                                    <h5 className="card-title">Digital Marketing & SEO</h5>
+                                                    <FontAwesomeIcon icon={faBullseye} className="service-icon mb-3" />
+                                                    <h5 className="card-title">Digital Marketing Integration</h5>
                                                     <button 
                                                         className='btn btn-outline-primary'
                                                         onClick={() => history.push('/digital-marketing-integration-seo-packages')}

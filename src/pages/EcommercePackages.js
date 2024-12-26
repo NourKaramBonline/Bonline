@@ -16,74 +16,129 @@ const EcommercePackages = () => {
         }
     };
 
+    const allFeatures = [
+        'Custom Responsive Design',
+        'Enhanced UI/UX Design',
+        'Unlimited Product Listings',
+        'Standard Shopping Cart',
+        'Advanced Cart (Discounts/Coupons)',
+        'Personalized Cart Recommendations',
+        'Single Payment Gateway Integration',
+        'Multiple Payment Gateway Options',
+        'Basic Shipping Configuration',
+        'Comprehensive Shipping Options',
+        'Tax Configurations',
+        'Inventory Management',
+        'Customer Account Management',
+        'Order Tracking',
+        'Blog/News Section',
+        'Social Media Integration',
+        'Basic SEO Optimization',
+        'Enhanced SEO Optimization',
+        'CRM and Email Marketing Tools',
+        'Google Analytics Integration',
+        'Training Session on Management',
+        'Hosting - Storage',
+        'Hosting - Bandwidth',
+        'Free Domain Registration (1 Year)',
+        'Post-Launch Support'
+    ];
+
     const packages = [
         {
             name: 'Basic E-commerce Package',
             price: 'Approximately 25,000 EGP',
-            features: [
-                'Custom responsive design compatible with all devices',
-                'Unlimited product listings',
-                'Standard shopping cart and checkout functionality',
-                'Integration with one payment gateway (e.g., PayPal, Stripe)',
-                'Basic shipping options configuration',
-                'User-friendly Content Management System (CMS)',
-                'Basic SEO optimization',
-                '1-year hosting (10 GB SSD storage, unlimited bandwidth)',
-                'Free domain registration for 1 year',
-                '1-month post-launch support'
-            ],
-            unsupportedFeatures: [
-                'Advanced shopping cart with discount and coupon functionalities',
-                'Integration with multiple payment gateways',
-                'Comprehensive shipping options and tax configurations',
-                'Enhanced SEO optimization',
-                'Integration with social media platforms'
-            ],
+            featureStatus: {
+                'Custom Responsive Design': true,
+                'Enhanced UI/UX Design': false,
+                'Unlimited Product Listings': true,
+                'Standard Shopping Cart': true,
+                'Advanced Cart (Discounts/Coupons)': false,
+                'Personalized Cart Recommendations': false,
+                'Single Payment Gateway Integration': true,
+                'Multiple Payment Gateway Options': false,
+                'Basic Shipping Configuration': false,
+                'Comprehensive Shipping Options': false,
+                'Tax Configurations': false,
+                'Inventory Management': false,
+                'Customer Account Management': false,
+                'Order Tracking': false,
+                'Blog/News Section': false,
+                'Social Media Integration': false,
+                'Basic SEO Optimization': true,
+                'Enhanced SEO Optimization': false,
+                'CRM and Email Marketing Tools': false,
+                'Google Analytics Integration': false,
+                'Training Session on Management': false,
+                'Hosting - Storage': '10 GB SSD',
+                'Hosting - Bandwidth': 'Unlimited',
+                'Free Domain Registration (1 Year)': true,
+                'Post-Launch Support': '1 Month'
+            },
             color: 'blue'
         },
         {
             name: 'Standard E-commerce Package',
             price: 'Approximately 40,000 EGP',
-            features: [
-                'Custom responsive design with enhanced UI/UX elements',
-                'Unlimited product listings',
-                'Advanced shopping cart with discount and coupon functionalities',
-                'Integration with multiple payment gateways',
-                'Comprehensive shipping options and tax configurations',
-                'Inventory management system',
-                'Enhanced SEO optimization',
-                'Integration with social media platforms',
-                '1-year hosting (30 GB SSD storage, unlimited bandwidth)',
-                'Free domain registration for 1 year',
-                '3 months of post-launch support'
-            ],
-            unsupportedFeatures: [
-                'Bespoke responsive design with advanced UI/UX elements',
-                'Advanced shopping cart with personalized recommendations',
-                'Blog or news section',
-                'Integration with CRM and email marketing tools'
-            ],
+            featureStatus: {
+                'Custom Responsive Design': true,
+                'Enhanced UI/UX Design': true,
+                'Unlimited Product Listings': true,
+                'Standard Shopping Cart': true,
+                'Advanced Cart (Discounts/Coupons)': true,
+                'Personalized Cart Recommendations': false,
+                'Single Payment Gateway Integration': false,
+                'Multiple Payment Gateway Options': true,
+                'Basic Shipping Configuration': true,
+                'Comprehensive Shipping Options': true,
+                'Tax Configurations': true,
+                'Inventory Management': true,
+                'Customer Account Management': false,
+                'Order Tracking': false,
+                'Blog/News Section': false,
+                'Social Media Integration': true,
+                'Basic SEO Optimization': true,
+                'Enhanced SEO Optimization': true,
+                'CRM and Email Marketing Tools': false,
+                'Google Analytics Integration': true,
+                'Training Session on Management': false,
+                'Hosting - Storage': '30 GB SSD',
+                'Hosting - Bandwidth': 'Unlimited',
+                'Free Domain Registration (1 Year)': true,
+                'Post-Launch Support': '3 Months'
+            },
             color: 'green'
         },
         {
             name: 'Premium E-commerce Package',
             price: 'Approximately 60,000 EGP',
-            features: [
-                'Bespoke responsive design with advanced UI/UX elements',
-                'Unlimited product listings',
-                'Advanced shopping cart with personalized recommendations',
-                'Integration with multiple payment gateways and methods',
-                'Comprehensive shipping, tax, and inventory management',
-                'Customer account management and order tracking',
-                'Blog or news section',
-                'Comprehensive SEO and performance optimization',
-                'Integration with CRM and email marketing tools',
-                'Training session on website management',
-                '1-year hosting (50 GB SSD storage, unlimited bandwidth)',
-                'Free domain registration for 1 year',
-                '6 months of post-launch support'
-            ],
-            unsupportedFeatures: [],
+            featureStatus: {
+                'Custom Responsive Design': true,
+                'Enhanced UI/UX Design': true,
+                'Unlimited Product Listings': true,
+                'Standard Shopping Cart': true,
+                'Advanced Cart (Discounts/Coupons)': true,
+                'Personalized Cart Recommendations': true,
+                'Single Payment Gateway Integration': false,
+                'Multiple Payment Gateway Options': true,
+                'Basic Shipping Configuration': true,
+                'Comprehensive Shipping Options': true,
+                'Tax Configurations': true,
+                'Inventory Management': true,
+                'Customer Account Management': true,
+                'Order Tracking': true,
+                'Blog/News Section': true,
+                'Social Media Integration': true,
+                'Basic SEO Optimization': true,
+                'Enhanced SEO Optimization': true,
+                'CRM and Email Marketing Tools': true,
+                'Google Analytics Integration': true,
+                'Training Session on Management': true,
+                'Hosting - Storage': '50 GB SSD',
+                'Hosting - Bandwidth': 'Unlimited',
+                'Free Domain Registration (1 Year)': true,
+                'Post-Launch Support': '6 Months'
+            },
             color: 'red'
         }
     ];
@@ -102,19 +157,19 @@ const EcommercePackages = () => {
                                 </div>
                                 <div className={styles.packageContent}>
                                     <div className={styles.featuresList}>
-                                        {pkg.features.map((feature, idx) => (
+                                        {allFeatures.map((feature, idx) => (
                                             <div key={idx} className={styles.featureItem}>
-                                                <span className={styles.checkIcon}>
-                                                    <FontAwesomeIcon icon={faCheck} />
-                                                </span>
-                                                {feature}
-                                            </div>
-                                        ))}
-                                        {pkg.unsupportedFeatures.map((feature, idx) => (
-                                            <div key={idx} className={`${styles.featureItem} ${styles.unsupported}`}>
-                                                <span className={styles.timesIcon}>
-                                                    <FontAwesomeIcon icon={faTimes} />
-                                                </span>
+                                                {pkg.featureStatus[feature] === true ? (
+                                                    <span className={styles.checkIcon}>
+                                                        <FontAwesomeIcon icon={faCheck} />
+                                                    </span>
+                                                ) : pkg.featureStatus[feature] === false ? (
+                                                    <span className={styles.timesIcon}>
+                                                        <FontAwesomeIcon icon={faTimes} />
+                                                    </span>
+                                                ) : (
+                                                    <span className={styles.featureValue}>{pkg.featureStatus[feature]}</span>
+                                                )}
                                                 {feature}
                                             </div>
                                         ))}

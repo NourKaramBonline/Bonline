@@ -17,6 +17,7 @@ import project5Logo from './assets/images/internationalElevatorlogo.jpg';
 import itc4uLogo from './assets/images/itc4uLogoNew.jpg';
 import Clients from './pages/Clients';
 import EcommercePackages from './pages/EcommercePackages';
+import HostingPackages from './pages/HostingPackages';
 import Layout from './components/Layout';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
@@ -141,7 +142,7 @@ function App() {
                                             <div className="card service-card h-100">
                                                 <div className="card-body text-center">
                                                     <FontAwesomeIcon icon={faServer} className="service-icon mb-3" />
-                                                    <h5 className="card-title">Hosting Solutions Packages</h5>
+                                                    <h5 className="card-title">Hosting Packages</h5>
                                                     <button 
                                                         className='btn btn-outline-primary'
                                                         onClick={() => history.push('/hosting-packages')}
@@ -320,6 +321,7 @@ function App() {
                     )} />
                     <Route path="/clients" component={Clients} />
                     <Route path="/ecommerce-packages" component={EcommercePackages} />
+                    <Route path="/hosting-packages" component={HostingPackages} />
                 </Switch>
             </Layout>
         </div>

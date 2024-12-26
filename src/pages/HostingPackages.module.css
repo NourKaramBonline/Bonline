@@ -1,0 +1,125 @@
+.packagesContainer {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.sectionTitle {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+    font-weight: bold;
+}
+
+.packageCard {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.packageCard:hover {
+    transform: translateY(-10px);
+}
+
+.packageblue {
+    border-top: 5px solid #007bff;
+}
+
+.packagegreen {
+    border-top: 5px solid #28a745;
+}
+
+.packagered {
+    border-top: 5px solid #dc3545;
+}
+
+.packageHeader {
+    padding: 30px;
+    text-align: center;
+    background: #f8f9fa;
+}
+
+.packageTitle {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.packagePrice {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #666;
+    margin-top: 10px;
+}
+
+.packageContent {
+    padding: 30px;
+}
+
+.featuresList {
+    margin-bottom: 30px;
+}
+
+.featureItem {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+.checkIcon {
+    color: #28a745;
+    margin-right: 10px;
+    width: 20px;
+}
+
+.timesIcon {
+    color: #dc3545;
+    margin-right: 10px;
+    width: 20px;
+}
+
+.featureValue {
+    color: #007bff;
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.buyButton {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btnblue {
+    background: #007bff;
+    color: white;
+}
+
+.btnblue:hover {
+    background: #0056b3;
+}
+
+.btngreen {
+    background: #28a745;
+    color: white;
+}
+
+.btngreen:hover {
+    background: #218838;
+}
+
+.btnred {
+    background: #dc3545;
+    color: white;
+}
+
+.btnred:hover {
+    background: #c82333;
+}

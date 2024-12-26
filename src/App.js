@@ -95,43 +95,93 @@ function App() {
 
                             <section id="about" className="section about-section">
                                 <div className="container">
-                                    <h2 className="section-title">About Us</h2>
-                                    <div className="title-underline"></div>
-                                    <p className="about-description">We are passionate about creating exceptional digital experiences that help businesses grow and succeed in the modern world.</p>
-                                    <div className="row">
-                                        <div className="col-md-6 mb-3">
-                                            <div className="card h-100">
-                                                <div className="card-body">
-                                                    <h5>10+ Years Experience</h5>
+                                    <div className="row align-items-center">
+                                        <div className="col-md-6">
+                                            <h2 className="section-title">About B-Online</h2>
+                                            <p className="lead mb-4">
+                                                Established in 2020, B-Online is a leading technology solutions provider based in Egypt, 
+                                                delivering innovative digital solutions to businesses worldwide.
+                                            </p>
+                                            <div className="about-content">
+                                                <h4 className="mb-3">Why Choose Us?</h4>
+                                                <div className="feature-item mb-3">
+                                                    <h5>Comprehensive Solutions</h5>
+                                                    <p>From web development and e-commerce to VPS hosting and mobile apps, 
+                                                    we provide end-to-end digital solutions tailored to your business needs.</p>
+                                                </div>
+                                                <div className="feature-item mb-3">
+                                                    <h5>Technical Excellence</h5>
+                                                    <p>Our team of certified developers and digital experts ensures 
+                                                    the highest quality standards in every project we deliver.</p>
+                                                </div>
+                                                <div className="feature-item mb-3">
+                                                    <h5>Customer-Centric Approach</h5>
+                                                    <p>We prioritize understanding your business goals and challenges 
+                                                    to deliver solutions that drive real value and growth.</p>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="col-md-6 mb-3">
-                                            <div className="card h-100">
-                                                <div className="card-body">
-                                                    <h5>200+ Projects Completed</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-md-6 mb-3">
-                                            <div className="card h-100">
-                                                <div className="card-body">
-                                                    <h5>24/7 Support</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="col-md-6 mb-3">
-                                            <div className="card h-100">
-                                                <div className="card-body">
-                                                    <h5>Award-winning Team</h5>
+                                        <div className="col-md-6">
+                                            <div className="about-stats">
+                                                <div className="row text-center">
+                                                    <div className="col-6 mb-4">
+                                                        <div className="stat-box">
+                                                            <h3>100+</h3>
+                                                            <p>Projects Completed</p>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-6 mb-4">
+                                                        <div className="stat-box">
+                                                            <h3>50+</h3>
+                                                            <p>Happy Clients</p>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-6 mb-4">
+                                                        <div className="stat-box">
+                                                            <h3>24/7</h3>
+                                                            <p>Technical Support</p>
+                                                        </div>
+                                                    </div>
+                                                    <div className="col-6 mb-4">
+                                                        <div className="stat-box">
+                                                            <h3>99.9%</h3>
+                                                            <p>Uptime Guarantee</p>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="text-center mt-4">
-                                        <button className="btn btn-outline-primary more-btn">
-                                            More <FontAwesomeIcon icon={faArrowRight} className="ms-2" />
-                                        </button>
+                                    <div className="row mt-5">
+                                        <div className="col-12">
+                                            <h4 className="text-center mb-4">Our Expertise</h4>
+                                            <div className="row">
+                                                <div className="col-md-3 col-sm-6 mb-4">
+                                                    <div className="expertise-box text-center">
+                                                        <h5>Web Development</h5>
+                                                        <p>Custom websites, e-commerce platforms, and web applications</p>
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-3 col-sm-6 mb-4">
+                                                    <div className="expertise-box text-center">
+                                                        <h5>Hosting Solutions</h5>
+                                                        <p>VPS, reseller, and dedicated hosting services</p>
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-3 col-sm-6 mb-4">
+                                                    <div className="expertise-box text-center">
+                                                        <h5>Mobile Development</h5>
+                                                        <p>iOS and Android app development</p>
+                                                    </div>
+                                                </div>
+                                                <div className="col-md-3 col-sm-6 mb-4">
+                                                    <div className="expertise-box text-center">
+                                                        <h5>Digital Marketing</h5>
+                                                        <p>SEO, social media, and digital integration</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </section>

@@ -261,6 +261,7 @@ body {
     transform-style: preserve-3d;
     perspective: 1000px;
     margin-bottom: 1rem;
+    width: 36px;
 }
 
 .service-card:hover .service-icon {

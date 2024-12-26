@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faStar, faTimes } from '@fortawesome/free-solid-svg-icons';
 
-const HostingPackages = () => {
+function HostingPackages() {
     const packagesTwo = [
         {
             name: 'Basic Package',
@@ -82,7 +82,7 @@ const HostingPackages = () => {
             <div className="container">
                 <h2 className="text-center mb-5">E-commerce Solutions Packages</h2>
                 <p className="text-center mb-5">Choose the perfect package for your online business needs</p>
-                
+
                 <div className="row justify-content-center">
                     {packagesTwo.map((pkg, index) => (
                         <div className="col-md-4 mb-4" key={index}>
@@ -112,6 +112,6 @@ const HostingPackages = () => {
             </div>
         </div>
     );
-};
+}
 
 export default HostingPackages;

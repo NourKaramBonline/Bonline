@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
     faBars, faShoppingCart, faServer, faMobile, faChartLine, faBullhorn,
-    faEnvelope, faMapMarkerAlt, faPhone, faHeart, faArrowUp, faArrowRight, faExternalLinkAlt 
+    faEnvelope, faMapMarkerAlt, faPhone, faHeart, faArrowUp, faArrowRight, faExternalLinkAlt,
+    faCode 
 } from '@fortawesome/free-solid-svg-icons';
 import { 
     faFacebookF, faTwitter, faInstagram, faLinkedinIn, 
@@ -20,6 +21,7 @@ import EcommercePackages from './pages/EcommercePackages';
 import HostingPackages from './pages/HostingPackages';
 import DigitalMarketingIntegrationSEOPackages from './pages/DigitalMarketingIntegrationSEOPackages';
 import MobileAppPackages from './pages/MobileAppPackages';
+import CustomSoftwarePackages from './pages/CustomSoftwarePackages';
 import Layout from './components/Layout';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
@@ -135,7 +137,7 @@ function App() {
                                                         className='btn btn-outline-primary'
                                                         onClick={() => history.push('/ecommerce-packages')}
                                                     >
-                                                        Learn More
+                                                        Learn More <FontAwesomeIcon icon={faArrowRight} className="ms-2" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -149,7 +151,21 @@ function App() {
                                                         className='btn btn-outline-primary'
                                                         onClick={() => history.push('/hosting-packages')}
                                                     >
-                                                        Learn More
+                                                        Learn More <FontAwesomeIcon icon={faArrowRight} className="ms-2" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-3 mb-4">
+                                            <div className="card service-card h-100">
+                                                <div className="card-body text-center">
+                                                    <FontAwesomeIcon icon={faChartLine} className="service-icon mb-3" />
+                                                    <h5 className="card-title">Digital Marketing & SEO</h5>
+                                                    <button 
+                                                        className='btn btn-outline-primary'
+                                                        onClick={() => history.push('/digital-marketing-integration-seo-packages')}
+                                                    >
+                                                        Learn More <FontAwesomeIcon icon={faArrowRight} className="ms-2" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -158,12 +174,12 @@ function App() {
                                             <div className="card service-card h-100">
                                                 <div className="card-body text-center">
                                                     <FontAwesomeIcon icon={faMobile} className="service-icon mb-3" />
-                                                    <h5 className="card-title">Mobile Apps Packages</h5>
+                                                    <h5 className="card-title">Mobile App Development</h5>
                                                     <button 
                                                         className='btn btn-outline-primary'
                                                         onClick={() => history.push('/mobile-apps-packages')}
                                                     >
-                                                        Learn More
+                                                        Learn More <FontAwesomeIcon icon={faArrowRight} className="ms-2" />
                                                     </button>
                                                 </div>
                                             </div>
@@ -171,19 +187,17 @@ function App() {
                                         <div className="col-md-3 mb-4">
                                             <div className="card service-card h-100">
                                                 <div className="card-body text-center">
-                                                    <FontAwesomeIcon icon={faBullhorn} className="service-icon mb-3" />
-                                                    <h5 className="card-title">Digital Marketing Integration & SEO Packages</h5>
+                                                    <FontAwesomeIcon icon={faCode} className="service-icon mb-3" />
+                                                    <h5 className="card-title">Custom Software Development</h5>
                                                     <button 
                                                         className='btn btn-outline-primary'
-                                                        onClick={() => history.push('/digital-marketing-integration-seo-packages')}
+                                                        onClick={() => history.push('/custom-software-packages')}
                                                     >
-                                                        Learn More
+                                                        Learn More <FontAwesomeIcon icon={faArrowRight} className="ms-2" />
                                                     </button>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div className="text-center mt-4">
                                     </div>
                                 </div>
                             </section>
@@ -326,6 +340,7 @@ function App() {
                     <Route path="/hosting-packages" component={HostingPackages} />
                     <Route path="/digital-marketing-integration-seo-packages" component={DigitalMarketingIntegrationSEOPackages} />
                     <Route path="/mobile-apps-packages" component={MobileAppPackages} />
+                    <Route path="/custom-software-packages" component={CustomSoftwarePackages} />
                 </Switch>
             </Layout>
         </div>

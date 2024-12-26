@@ -17,54 +17,117 @@ const VPSHostingPackages = () => {
 
     const packages = [
         {
-            name: 'Basic VPS',
-            price: '1,500 EGP/mo',
+            name: 'VPS 1',
+            price: '225 EGP/month',
             color: 'blue',
             features: [
-                { name: 'CPU Cores', status: '2 vCPU' },
-                { name: 'RAM', status: '2 GB' },
-                { name: 'Storage', status: '50 GB SSD' },
-                { name: 'Bandwidth', status: '2 TB' },
-                { name: 'Root Access', status: true },
-                { name: 'DDoS Protection', status: true },
+                { name: 'vCPU Cores', status: '4' },
+                { name: 'RAM', status: '6 GB' },
+                { name: 'Storage Options', status: 'NVMe or 400 GB SSD' },
+                { name: 'Snapshots', status: '1' },
+                { name: 'Bandwidth', status: '32 TB' },
+                { name: 'Incoming Traffic', status: 'Unlimited' },
                 { name: 'Control Panel', status: 'Optional' },
-                { name: 'Dedicated IP', status: '1' },
-                { name: 'Backup Service', status: 'Weekly' },
-                { name: 'Technical Support', status: '24/7' }
+                { name: 'DDoS Protection', status: 'Included' },
+                { name: 'Full Root Access', status: 'Yes' },
+                { name: 'Operating System', status: 'Linux/Windows' },
+                { name: 'Data Center Locations', status: 'Multiple Regions' },
+                { name: 'Support', status: '24/7 Basic Support' }
             ]
         },
         {
-            name: 'Professional VPS',
-            price: '2,500 EGP/mo',
+            name: 'VPS 2',
+            price: '563 EGP/month',
+            color: 'blue',
+            features: [
+                { name: 'vCPU Cores', status: '6' },
+                { name: 'RAM', status: '16 GB' },
+                { name: 'Storage Options', status: 'NVMe or 400 GB SSD' },
+                { name: 'Snapshots', status: '2' },
+                { name: 'Bandwidth', status: '32 TB' },
+                { name: 'Incoming Traffic', status: 'Unlimited' },
+                { name: 'Control Panel', status: 'Optional' },
+                { name: 'DDoS Protection', status: 'Included' },
+                { name: 'Full Root Access', status: 'Yes' },
+                { name: 'Operating System', status: 'Linux/Windows' },
+                { name: 'Data Center Locations', status: 'Multiple Regions' },
+                { name: 'Support', status: '24/7 Basic Support' }
+            ]
+        },
+        {
+            name: 'VPS 3',
+            price: '788 EGP/month',
             color: 'green',
             features: [
-                { name: 'CPU Cores', status: '4 vCPU' },
-                { name: 'RAM', status: '4 GB' },
-                { name: 'Storage', status: '100 GB SSD' },
-                { name: 'Bandwidth', status: '4 TB' },
-                { name: 'Root Access', status: true },
-                { name: 'DDoS Protection', status: true },
-                { name: 'Control Panel', status: 'Included' },
-                { name: 'Dedicated IP', status: '2' },
-                { name: 'Backup Service', status: 'Daily' },
-                { name: 'Technical Support', status: '24/7 Priority' }
+                { name: 'vCPU Cores', status: '8' },
+                { name: 'RAM', status: '24 GB' },
+                { name: 'Storage Options', status: 'NVMe or 1.2 TB SSD' },
+                { name: 'Snapshots', status: '2' },
+                { name: 'Bandwidth', status: '32 TB' },
+                { name: 'Incoming Traffic', status: 'Unlimited' },
+                { name: 'Control Panel', status: 'Optional' },
+                { name: 'DDoS Protection', status: 'Included' },
+                { name: 'Full Root Access', status: 'Yes' },
+                { name: 'Operating System', status: 'Linux/Windows' },
+                { name: 'Data Center Locations', status: 'Multiple Regions' },
+                { name: 'Support', status: '24/7 Basic Support' }
             ]
         },
         {
-            name: 'Enterprise VPS',
-            price: '4,000 EGP/mo',
+            name: 'VPS 4',
+            price: '1,238 EGP/month',
+            color: 'green',
+            features: [
+                { name: 'vCPU Cores', status: '12' },
+                { name: 'RAM', status: '48 GB' },
+                { name: 'Storage Options', status: 'NVMe or 1.6 TB SSD' },
+                { name: 'Snapshots', status: '3' },
+                { name: 'Bandwidth', status: '32 TB' },
+                { name: 'Incoming Traffic', status: 'Unlimited' },
+                { name: 'Control Panel', status: 'Optional' },
+                { name: 'DDoS Protection', status: 'Included' },
+                { name: 'Full Root Access', status: 'Yes' },
+                { name: 'Operating System', status: 'Linux/Windows' },
+                { name: 'Data Center Locations', status: 'Multiple Regions' },
+                { name: 'Support', status: '24/7 Basic Support' }
+            ]
+        },
+        {
+            name: 'VPS 5',
+            price: '1,575 EGP/month',
             color: 'red',
             features: [
-                { name: 'CPU Cores', status: '8 vCPU' },
-                { name: 'RAM', status: '8 GB' },
-                { name: 'Storage', status: '200 GB SSD' },
-                { name: 'Bandwidth', status: '8 TB' },
-                { name: 'Root Access', status: true },
-                { name: 'DDoS Protection', status: true },
-                { name: 'Control Panel', status: 'Included' },
-                { name: 'Dedicated IP', status: '4' },
-                { name: 'Backup Service', status: 'Daily + Remote' },
-                { name: 'Technical Support', status: '24/7 VIP' }
+                { name: 'vCPU Cores', status: '16' },
+                { name: 'RAM', status: '64 GB' },
+                { name: 'Storage Options', status: 'NVMe or 2 TB SSD' },
+                { name: 'Snapshots', status: '3' },
+                { name: 'Bandwidth', status: '32 TB' },
+                { name: 'Incoming Traffic', status: 'Unlimited' },
+                { name: 'Control Panel', status: 'Optional' },
+                { name: 'DDoS Protection', status: 'Included' },
+                { name: 'Full Root Access', status: 'Yes' },
+                { name: 'Operating System', status: 'Linux/Windows' },
+                { name: 'Data Center Locations', status: 'Multiple Regions' },
+                { name: 'Support', status: '24/7 Basic Support' }
+            ]
+        },
+        {
+            name: 'VPS 6',
+            price: '2,888 EGP/month',
+            color: 'red',
+            features: [
+                { name: 'vCPU Cores', status: '24' },
+                { name: 'RAM', status: '120 GB' },
+                { name: 'Storage Options', status: 'NVMe or 2.4 TB SSD' },
+                { name: 'Snapshots', status: '3' },
+                { name: 'Bandwidth', status: '32 TB' },
+                { name: 'Incoming Traffic', status: 'Unlimited' },
+                { name: 'Control Panel', status: 'Optional' },
+                { name: 'DDoS Protection', status: 'Included' },
+                { name: 'Full Root Access', status: 'Yes' },
+                { name: 'Operating System', status: 'Linux/Windows' },
+                { name: 'Data Center Locations', status: 'Multiple Regions' },
+                { name: 'Support', status: '24/7 Basic Support' }
             ]
         }
     ];
@@ -74,7 +137,7 @@ const VPSHostingPackages = () => {
             <div className="container py-5">
                 <h2 className={styles.sectionTitle}>VPS Hosting Packages</h2>
                 <p className={styles.sectionDescription}>
-                    Experience superior performance with our Virtual Private Server hosting solutions.
+                    Below is a comprehensive comparison of the VPS Hosting Packages, showcasing features included at each tier with 50% margin added for pricing.
                 </p>
                 <div className="row justify-content-center">
                     {packages.map((pkg, index) => (

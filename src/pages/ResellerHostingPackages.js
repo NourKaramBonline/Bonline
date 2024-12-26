@@ -18,53 +18,59 @@ const ResellerHostingPackages = () => {
     const packages = [
         {
             name: 'Basic Reseller',
-            price: '1,000 EGP/mo',
+            price: '750 EGP/month',
             color: 'blue',
             features: [
-                { name: 'Storage Space', status: '50 GB SSD' },
-                { name: 'Monthly Bandwidth', status: '500 GB' },
-                { name: 'cPanel Accounts', status: '10' },
+                { name: 'Disk Space', status: '60 GB SSD' },
+                { name: 'Bandwidth', status: '600 GB' },
+                { name: 'Number of Accounts', status: 'Up to 10' },
+                { name: 'Control Panel', status: 'cPanel/WHM' },
+                { name: 'White-Label Branding', status: true },
                 { name: 'Free SSL Certificates', status: true },
-                { name: 'WHM Control Panel', status: true },
-                { name: 'Dedicated IP', status: false },
-                { name: 'White Label Support', status: true },
-                { name: 'Free Domain Reseller', status: false },
-                { name: 'Backup System', status: 'Weekly' },
-                { name: 'Technical Support', status: '24/7' }
+                { name: 'Backups', status: 'Weekly' },
+                { name: 'Security Features', status: 'Basic Firewall' },
+                { name: 'Support', status: '24/7 Basic Support' },
+                { name: 'Marketing Tools', status: false },
+                { name: 'Account Management', status: 'WHM' },
+                { name: 'Additional Features', status: false }
             ]
         },
         {
-            name: 'Professional Reseller',
-            price: '2,000 EGP/mo',
+            name: 'Standard Reseller',
+            price: '1,500 EGP/month',
             color: 'green',
             features: [
-                { name: 'Storage Space', status: '100 GB SSD' },
-                { name: 'Monthly Bandwidth', status: '1000 GB' },
-                { name: 'cPanel Accounts', status: '25' },
+                { name: 'Disk Space', status: '120 GB SSD' },
+                { name: 'Bandwidth', status: '1.2 TB' },
+                { name: 'Number of Accounts', status: 'Up to 50' },
+                { name: 'Control Panel', status: 'cPanel/WHM' },
+                { name: 'White-Label Branding', status: true },
                 { name: 'Free SSL Certificates', status: true },
-                { name: 'WHM Control Panel', status: true },
-                { name: 'Dedicated IP', status: true },
-                { name: 'White Label Support', status: true },
-                { name: 'Free Domain Reseller', status: true },
-                { name: 'Backup System', status: 'Daily' },
-                { name: 'Technical Support', status: '24/7 Priority' }
+                { name: 'Backups', status: 'Daily' },
+                { name: 'Security Features', status: 'Advanced Firewall' },
+                { name: 'Support', status: '24/7 Priority Support' },
+                { name: 'Marketing Tools', status: 'Basic' },
+                { name: 'Account Management', status: 'WHM' },
+                { name: 'Additional Features', status: 'Website Migration' }
             ]
         },
         {
-            name: 'Enterprise Reseller',
-            price: '3,500 EGP/mo',
+            name: 'Premium Reseller',
+            price: '3,000 EGP/month',
             color: 'red',
             features: [
-                { name: 'Storage Space', status: '250 GB SSD' },
-                { name: 'Monthly Bandwidth', status: 'Unlimited' },
-                { name: 'cPanel Accounts', status: 'Unlimited' },
+                { name: 'Disk Space', status: '200 GB SSD' },
+                { name: 'Bandwidth', status: '2.5 TB' },
+                { name: 'Number of Accounts', status: 'Up to 100' },
+                { name: 'Control Panel', status: 'cPanel/WHM' },
+                { name: 'White-Label Branding', status: true },
                 { name: 'Free SSL Certificates', status: true },
-                { name: 'WHM Control Panel', status: true },
-                { name: 'Dedicated IP', status: true },
-                { name: 'White Label Support', status: true },
-                { name: 'Free Domain Reseller', status: true },
-                { name: 'Backup System', status: 'Daily + Remote' },
-                { name: 'Technical Support', status: '24/7 VIP' }
+                { name: 'Backups', status: 'Daily with On-Demand' },
+                { name: 'Security Features', status: 'Advanced Firewall + Malware Scanning' },
+                { name: 'Support', status: '24/7 Dedicated Support' },
+                { name: 'Marketing Tools', status: 'Advanced' },
+                { name: 'Account Management', status: 'WHM' },
+                { name: 'Additional Features', status: 'Website Migration + SEO Tools' }
             ]
         }
     ];
@@ -74,7 +80,7 @@ const ResellerHostingPackages = () => {
             <div className="container py-5">
                 <h2 className={styles.sectionTitle}>Reseller Hosting Packages</h2>
                 <p className={styles.sectionDescription}>
-                    Start your own hosting business with our reliable reseller hosting packages.
+                    Below is a comprehensive comparison of the Reseller Hosting Packages, showcasing features included at each tier.
                 </p>
                 <div className="row justify-content-center">
                     {packages.map((pkg, index) => (

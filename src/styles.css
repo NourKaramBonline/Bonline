@@ -664,6 +664,35 @@ body {
     background: rgba(255, 255, 255, 0.1) !important;
 }
 
+#contact .card .card-body {
+    background-color: #2c3e50;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#contact .card .card-body:hover {
+    background-color: #34495e;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.contact .card-body {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.contact .card-body:hover {
+    background-color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
 /* Modern Card Styles */
 .card {
     border: none;

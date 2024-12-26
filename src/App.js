@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { 
     faBars, faShoppingCart, faServer, faMobile, faBullseye, faBullhorn,
     faEnvelope, faMapMarkerAlt, faPhone, faHeart, faArrowUp, faArrowRight, faExternalLinkAlt,
-    faCode 
+    faCode, faCloudUpload, faNetworkWired 
 } from '@fortawesome/free-solid-svg-icons';
 import { 
     faFacebookF, faTwitter, faInstagram, faLinkedinIn, 
@@ -22,6 +22,8 @@ import HostingPackages from './pages/HostingPackages';
 import DigitalMarketingIntegrationSEOPackages from './pages/DigitalMarketingIntegrationSEOPackages';
 import MobileAppPackages from './pages/MobileAppPackages';
 import CustomSoftwarePackages from './pages/CustomSoftwarePackages';
+import ResellerHostingPackages from './pages/ResellerHostingPackages';
+import VPSHostingPackages from './pages/VPSHostingPackages';
 import Layout from './components/Layout';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
@@ -152,6 +154,36 @@ function App() {
                                                     <button 
                                                         className='btn btn-outline-primary'
                                                         onClick={() => history.push('/hosting-packages')}
+                                                    >
+                                                        Learn More <FontAwesomeIcon icon={faArrowRight} className="ms-2" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-3 mb-4">
+                                            <div className="card service-card h-100">
+                                                <div className="card-body text-center">
+                                                    <FontAwesomeIcon icon={faCloudUpload} className="service-icon mb-3" />
+                                                    <h5 className="card-title">Reseller Hosting</h5>
+                                                    <p>Start your own hosting business with our reliable reseller solutions.</p>
+                                                    <button 
+                                                        className='btn btn-outline-primary'
+                                                        onClick={() => history.push('/reseller-hosting-packages')}
+                                                    >
+                                                        Learn More <FontAwesomeIcon icon={faArrowRight} className="ms-2" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="col-md-3 mb-4">
+                                            <div className="card service-card h-100">
+                                                <div className="card-body text-center">
+                                                    <FontAwesomeIcon icon={faNetworkWired} className="service-icon mb-3" />
+                                                    <h5 className="card-title">VPS Hosting</h5>
+                                                    <p>Experience superior performance with our Virtual Private Server solutions.</p>
+                                                    <button 
+                                                        className='btn btn-outline-primary'
+                                                        onClick={() => history.push('/vps-hosting-packages')}
                                                     >
                                                         Learn More <FontAwesomeIcon icon={faArrowRight} className="ms-2" />
                                                     </button>
@@ -343,6 +375,8 @@ function App() {
                     <Route path="/clients" component={Clients} />
                     <Route path="/ecommerce-packages" component={EcommercePackages} />
                     <Route path="/hosting-packages" component={HostingPackages} />
+                    <Route path="/reseller-hosting-packages" component={ResellerHostingPackages} />
+                    <Route path="/vps-hosting-packages" component={VPSHostingPackages} />
                     <Route path="/digital-marketing-integration-seo-packages" component={DigitalMarketingIntegrationSEOPackages} />
                     <Route path="/mobile-apps-packages" component={MobileAppPackages} />
                     <Route path="/custom-software-packages" component={CustomSoftwarePackages} />

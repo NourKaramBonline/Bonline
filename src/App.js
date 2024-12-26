@@ -79,7 +79,17 @@ function App() {
                                 <div className="container text-center">
                                     <h1 className="display-4">Welcome to Our Creative Studio</h1>
                                     <p className="lead">We bring your digital dreams to life</p>
-                                    <button className="btn btn-danger btn-lg mt-4">Get Started</button>
+                                    <button 
+                                        className="btn btn-danger btn-lg mt-4"
+                                        onClick={() => {
+                                            const contactSection = document.getElementById('contact');
+                                            if (contactSection) {
+                                                contactSection.scrollIntoView({ behavior: 'smooth' });
+                                            }
+                                        }}
+                                    >
+                                        Get Started
+                                    </button>
                                 </div>
                             </section>
 

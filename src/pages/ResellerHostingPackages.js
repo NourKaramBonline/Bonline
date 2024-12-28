@@ -19,60 +19,60 @@ const ResellerHostingPackages = () => {
 
     const packages = [
         {
-            name: 'Basic Reseller',
+            name: 'Basic Reseller Package',
             price: '750 EGP/month',
             color: 'blue',
             features: [
-                { name: 'Disk Space', status: '60 GB SSD' },
-                { name: 'Bandwidth', status: '600 GB' },
-                { name: 'Number of Accounts', status: 'Up to 10' },
-                { name: 'Control Panel', status: 'cPanel/WHM' },
+                { name: 'Disk Space', value: '60 GB SSD', status: true },
+                { name: 'Bandwidth', value: '600 GB', status: true },
+                { name: 'Number of Accounts', value: 'Up to 10', status: true },
+                { name: 'Control Panel', value: 'cPanel/WHM', status: true },
                 { name: 'White-Label Branding', status: true },
                 { name: 'Free SSL Certificates', status: true },
-                { name: 'Backups', status: 'Weekly' },
-                { name: 'Security Features', status: 'Basic Firewall' },
-                { name: 'Support', status: '24/7 Basic Support' },
+                { name: 'Backups', value: 'Weekly', status: true },
+                { name: 'Security', value: 'Basic Firewall', status: true },
+                { name: 'Support', value: '24/7 Basic Support', status: true },
                 { name: 'Marketing Tools', status: false },
-                { name: 'Account Management', status: 'WHM' },
+                { name: 'Account Management', value: 'WHM', status: true },
                 { name: 'Additional Features', status: false }
             ]
         },
         {
-            name: 'Standard Reseller',
+            name: 'Standard Reseller Package',
             price: '1,500 EGP/month',
             color: 'green',
             features: [
-                { name: 'Disk Space', status: '120 GB SSD' },
-                { name: 'Bandwidth', status: '1.2 TB' },
-                { name: 'Number of Accounts', status: 'Up to 50' },
-                { name: 'Control Panel', status: 'cPanel/WHM' },
+                { name: 'Disk Space', value: '120 GB SSD', status: true },
+                { name: 'Bandwidth', value: '1.2 TB', status: true },
+                { name: 'Number of Accounts', value: 'Up to 50', status: true },
+                { name: 'Control Panel', value: 'cPanel/WHM', status: true },
                 { name: 'White-Label Branding', status: true },
                 { name: 'Free SSL Certificates', status: true },
-                { name: 'Backups', status: 'Daily' },
-                { name: 'Security Features', status: 'Advanced Firewall' },
-                { name: 'Support', status: '24/7 Priority Support' },
-                { name: 'Marketing Tools', status: 'Basic' },
-                { name: 'Account Management', status: 'WHM' },
-                { name: 'Additional Features', status: 'Website Migration' }
+                { name: 'Backups', value: 'Daily', status: true },
+                { name: 'Security', value: 'Advanced Firewall', status: true },
+                { name: 'Support', value: '24/7 Priority Support', status: true },
+                { name: 'Marketing Tools', value: 'Basic', status: true },
+                { name: 'Account Management', value: 'WHM', status: true },
+                { name: 'Additional Features', value: 'Website Migration', status: true }
             ]
         },
         {
-            name: 'Premium Reseller',
+            name: 'Premium Reseller Package',
             price: '3,000 EGP/month',
             color: 'red',
             features: [
-                { name: 'Disk Space', status: '200 GB SSD' },
-                { name: 'Bandwidth', status: '2.5 TB' },
-                { name: 'Number of Accounts', status: 'Up to 100' },
-                { name: 'Control Panel', status: 'cPanel/WHM' },
+                { name: 'Disk Space', value: '200 GB SSD', status: true },
+                { name: 'Bandwidth', value: '2.5 TB', status: true },
+                { name: 'Number of Accounts', value: 'Up to 100', status: true },
+                { name: 'Control Panel', value: 'cPanel/WHM', status: true },
                 { name: 'White-Label Branding', status: true },
                 { name: 'Free SSL Certificates', status: true },
-                { name: 'Backups', status: 'Daily with On-Demand' },
-                { name: 'Security Features', status: 'Advanced Firewall + Malware Scanning' },
-                { name: 'Support', status: '24/7 Dedicated Support' },
-                { name: 'Marketing Tools', status: 'Advanced' },
-                { name: 'Account Management', status: 'WHM' },
-                { name: 'Additional Features', status: 'Website Migration + SEO Tools' }
+                { name: 'Backups', value: 'Daily with On-Demand', status: true },
+                { name: 'Security', value: 'Advanced Firewall + Malware Scanning', status: true },
+                { name: 'Support', value: '24/7 Dedicated Support', status: true },
+                { name: 'Marketing Tools', value: 'Advanced', status: true },
+                { name: 'Account Management', value: 'WHM', status: true },
+                { name: 'Additional Features', value: 'Website Migration + SEO Tools', status: true }
             ]
         }
     ];
@@ -96,18 +96,16 @@ const ResellerHostingPackages = () => {
                                     <div className={styles.featuresList}>
                                         {pkg.features.map((feature, idx) => (
                                             <div key={idx} className={styles.featureItem}>
-                                                {feature.status === true ? (
+                                                {feature.status ? (
                                                     <span className={styles.checkIcon}>
                                                         <FontAwesomeIcon icon={faCheck} />
                                                     </span>
-                                                ) : feature.status === false ? (
+                                                ) : (
                                                     <span className={styles.timesIcon}>
                                                         <FontAwesomeIcon icon={faTimes} />
                                                     </span>
-                                                ) : (
-                                                    <span className={styles.featureValue}>{feature.status}</span>
                                                 )}
-                                                {feature.name}
+                                                {feature.name}&nbsp;&nbsp;{feature.value && <span className={styles.featureValue}>{feature.value}</span>}
                                             </div>
                                         ))}
                                     </div>

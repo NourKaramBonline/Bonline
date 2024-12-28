@@ -21,15 +21,15 @@ const HostingPackages = () => {
             price: '2,500 EGP/year',
             color: 'blue',
             features: [
-                { name: 'Number of Websites (1)', status: true },
-                { name: 'SSD Storage 10 GB', status: true },
-                { name: 'Bandwidth Unlimited', status: true },
+                { name: 'Number of Websites', value: '1', status: true },
+                { name: 'SSD Storage', value: '10 GB', status: true },
+                { name: 'Bandwidth', value: 'Unlimited', status: true },
                 { name: 'Free SSL Certificates', status: true },
-                { name: 'Email Accounts (1)', status: true },
-                { name: 'Control Panel cPanel', status: true },
-                { name: 'Uptime Guarantee 99.9%', status: true },
-                { name: '24/7 Customer Support', status: true },
-                { name: 'Free 1-year .com Domain Registration', status: true }
+                { name: 'Email Accounts', value: '1', status: true },
+                { name: 'Control Panel', value: 'cPanel', status: true },
+                { name: 'Uptime Guarantee', value: '99.9%', status: true },
+                { name: 'Customer Support', value: '24/7', status: true },
+                { name: 'Domain Registration', value: 'Free 1-year .com domain', status: true }
             ]
         },
         {
@@ -37,15 +37,15 @@ const HostingPackages = () => {
             price: '4,500 EGP/year',
             color: 'green',
             features: [
-                { name: 'Number of Websites (Up to 5)', status: true },
-                { name: 'SSD Storage 30 GB', status: true },
-                { name: 'Bandwidth Unlimited', status: true },
+                { name: 'Number of Websites', value: 'Up to 5', status: true },
+                { name: 'SSD Storage', value: '30 GB', status: true },
+                { name: 'Bandwidth', value: 'Unlimited', status: true },
                 { name: 'Free SSL Certificates', status: true },
-                { name: 'Email Accounts (5)', status: true },
-                { name: 'Control Panel cPanel', status: true },
-                { name: 'Uptime Guarantee 99.9%', status: true },
-                { name: '24/7 Customer Support', status: true },
-                { name: 'Free 1-year .com Domain Registration', status: true }
+                { name: 'Email Accounts', value: '5', status: true },
+                { name: 'Control Panel', value: 'cPanel', status: true },
+                { name: 'Uptime Guarantee', value: '99.9%', status: true },
+                { name: 'Customer Support', value: '24/7', status: true },
+                { name: 'Domain Registration', value: 'Free 1-year .com domain', status: true }
             ]
         },
         {
@@ -53,15 +53,15 @@ const HostingPackages = () => {
             price: '6,500 EGP/year',
             color: 'red',
             features: [
-                { name: 'Number of Websites (Unlimited)', status: true },
-                { name: 'SSD Storage 100 GB', status: true },
-                { name: 'Bandwidth Unlimited', status: true },
+                { name: 'Number of Websites', value: 'Unlimited', status: true },
+                { name: 'SSD Storage', value: '100 GB', status: true },
+                { name: 'Bandwidth', value: 'Unlimited', status: true },
                 { name: 'Free SSL Certificates', status: true },
-                { name: 'Email Accounts (Unlimited)', status: true },
-                { name: 'Control Panel cPanel', status: true },
-                { name: 'Uptime Guarantee 99.9%', status: true },
-                { name: '24/7 Priority Customer Support', status: true },
-                { name: 'Free 1-year .com Domain Registration', status: true }
+                { name: 'Email Accounts', value: 'Unlimited', status: true },
+                { name: 'Control Panel', value: 'cPanel', status: true },
+                { name: 'Uptime Guarantee', value: '99.9%', status: true },
+                { name: 'Customer Support', value: '24/7 Priority Support', status: true },
+                { name: 'Domain Registration', value: 'Free 1-year .com domain', status: true }
             ]
         }
     ];
@@ -91,7 +91,7 @@ const HostingPackages = () => {
                                                         <FontAwesomeIcon icon={faTimes} />
                                                     </span>
                                                 )}
-                                                {feature.name}
+                                                {feature.name}&nbsp;&nbsp;{feature.value && <span className={styles.featureValue}>{feature.value}</span>}
                                             </div>
                                         ))}
                                     </div>

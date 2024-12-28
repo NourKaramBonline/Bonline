@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faTimes } from '@fortawesome/free-solid-svg-icons';
 import { useHistory } from 'react-router-dom';
-import styles from './MobileAppPackages.module.css';
+import styles from './EcommercePackages.module.css';
 
 const MobileAppPackages = () => {
     const history = useHistory();
@@ -20,65 +20,53 @@ const MobileAppPackages = () => {
     const packages = [
         {
             name: 'Basic Mobile App Package',
-            price: '25,000 EGP',
+            price: '75,000 EGP',
             color: 'blue',
             features: [
                 { name: 'UI/UX Design', status: 'Basic responsive design' },
-                { name: 'Platform Support', status: 'Single platform (Android or iOS)' },
-                { name: 'User Authentication', status: true },
-                { name: 'Push Notifications', status: 'Basic notifications' },
-                { name: 'Data Storage', status: 'Local storage' },
-                { name: 'API Integration', status: 'Basic REST API integration' },
-                { name: 'Offline Mode', status: false },
-                { name: 'Analytics Integration', status: 'Basic app analytics' },
-                { name: 'Social Media Integration', status: false },
-                { name: 'In-App Purchases', status: false },
-                { name: 'App Store Optimization', status: true },
-                { name: 'Performance Monitoring', status: 'Basic monitoring' },
-                { name: 'Security Features', status: 'Standard security' },
-                { name: 'Support & Maintenance', status: '1 month support' }
+                { name: 'Platform Support', status: 'iOS or Android' },
+                { name: 'Number of Screens/Pages', status: 'Up to 5' },
+                { name: 'Functionality', status: 'Basic (e.g., informational content, contact form)' },
+                { name: 'Integration with Social Media', status: true },
+                { name: 'Third-Party API Integration', status: false },
+                { name: 'Analytics Integration', status: 'Basic' },
+                { name: 'Push Notifications', status: false },
+                { name: 'App Store/Google Play Submission', status: true },
+                { name: 'Post-Launch Support', status: '1 Month' }
             ]
         },
         {
             name: 'Standard Mobile App Package',
-            price: '40,000 EGP',
+            price: '150,000 EGP',
             color: 'green',
             features: [
-                { name: 'UI/UX Design', status: 'Advanced UI with animations' },
-                { name: 'Platform Support', status: 'Cross-platform (Android & iOS)' },
-                { name: 'User Authentication', status: true },
-                { name: 'Push Notifications', status: 'Advanced notifications' },
-                { name: 'Data Storage', status: 'Cloud storage integration' },
-                { name: 'API Integration', status: 'Multiple API integrations' },
-                { name: 'Offline Mode', status: true },
-                { name: 'Analytics Integration', status: 'Advanced analytics' },
-                { name: 'Social Media Integration', status: true },
-                { name: 'In-App Purchases', status: true },
-                { name: 'App Store Optimization', status: true },
-                { name: 'Performance Monitoring', status: 'Advanced monitoring' },
-                { name: 'Security Features', status: 'Enhanced security' },
-                { name: 'Support & Maintenance', status: '3 months support' }
+                { name: 'UI/UX Design', status: 'Custom' },
+                { name: 'Platform Support', status: 'iOS or Android' },
+                { name: 'Number of Screens/Pages', status: 'Up to 10' },
+                { name: 'Functionality', status: 'Advanced (e.g., user authentication, in-app purchases)' },
+                { name: 'Integration with Social Media', status: true },
+                { name: 'Third-Party API Integration', status: true },
+                { name: 'Analytics Integration', status: 'Enhanced' },
+                { name: 'Push Notifications', status: true },
+                { name: 'App Store/Google Play Submission', status: true },
+                { name: 'Post-Launch Support', status: '3 Months' }
             ]
         },
         {
             name: 'Premium Mobile App Package',
-            price: '60,000 EGP',
+            price: '300,000 EGP',
             color: 'red',
             features: [
-                { name: 'UI/UX Design', status: 'Premium UI with custom animations' },
-                { name: 'Platform Support', status: 'Native apps for all platforms' },
-                { name: 'User Authentication', status: true },
-                { name: 'Push Notifications', status: 'Custom notification system' },
-                { name: 'Data Storage', status: 'Advanced cloud infrastructure' },
-                { name: 'API Integration', status: 'Custom API development' },
-                { name: 'Offline Mode', status: true },
-                { name: 'Analytics Integration', status: 'Custom analytics dashboard' },
-                { name: 'Social Media Integration', status: true },
-                { name: 'In-App Purchases', status: true },
-                { name: 'App Store Optimization', status: true },
-                { name: 'Performance Monitoring', status: 'Real-time monitoring' },
-                { name: 'Security Features', status: 'Enterprise-grade security' },
-                { name: 'Support & Maintenance', status: '6 months premium support' }
+                { name: 'UI/UX Design', status: 'Premium with Prototyping' },
+                { name: 'Platform Support', status: 'Both iOS and Android' },
+                { name: 'Number of Screens/Pages', status: 'Unlimited' },
+                { name: 'Functionality', status: <span><span style={{color: '#007bff', fontWeight: '500'}}>Complex</span> (e.g., real-time data sync, custom animations)</span> },
+                { name: 'Integration with Social Media', status: true },
+                { name: 'Third-Party API Integration', status: <><span>Multiple Services</span><FontAwesomeIcon icon={faCheck} className={styles.checkIcon} /></> },
+                { name: 'Analytics Integration', status: 'Comprehensive' },
+                { name: 'Push Notifications', status: <><span>with In-App Messaging</span><FontAwesomeIcon icon={faCheck} className={styles.checkIcon} /></> },
+                { name: 'App Store/Google Play Submission', status: <><span>Optimized Submission</span><FontAwesomeIcon icon={faCheck} className={styles.checkIcon} /></> },
+                { name: 'Post-Launch Support', status: '6 Months' }
             ]
         }
     ];
@@ -99,18 +87,14 @@ const MobileAppPackages = () => {
                                     <div className={styles.featuresList}>
                                         {pkg.features.map((feature, idx) => (
                                             <div key={idx} className={styles.featureItem}>
-                                                {feature.status === true ? (
-                                                    <span className={styles.checkIcon}>
-                                                        <FontAwesomeIcon icon={faCheck} />
-                                                    </span>
-                                                ) : feature.status === false ? (
-                                                    <span className={styles.timesIcon}>
-                                                        <FontAwesomeIcon icon={faTimes} />
+                                                {typeof feature.status === 'boolean' ? (
+                                                    <span className={feature.status ? styles.checkIcon : styles.timesIcon}>
+                                                        <FontAwesomeIcon icon={feature.status ? faCheck : faTimes} />
                                                     </span>
                                                 ) : (
                                                     <span className={styles.featureValue}>{feature.status}</span>
                                                 )}
-                                                {feature.name}
+                                                <span>{feature.name}</span>
                                             </div>
                                         ))}
                                     </div>

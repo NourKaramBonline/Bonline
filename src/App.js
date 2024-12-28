@@ -82,7 +82,7 @@ function App() {
                                     <button 
                                         className="btn btn-danger btn-lg mt-4"
                                         onClick={() => {
-                                            const contactSection = document.getElementById('contact');
+                                            const contactSection = document.getElementById('services');
                                             if (contactSection) {
                                                 contactSection.scrollIntoView({ behavior: 'smooth' });
                                             }

@@ -25,7 +25,7 @@ const EcommercePackages = () => {
                 { name: 'Enhanced UI/UX Design', status: false },
                 { name: 'Unlimited Product Listings', status: true },
                 { name: 'Standard Shopping Cart', status: true },
-                { name: 'Advanced Cart (Discounts/Coupons)', status: false },
+                { name: 'Advanced Cart', value: 'Discounts/Coupons', status: false },
                 { name: 'Personalized Cart Recommendations', status: false },
                 { name: 'Single Payment Gateway Integration', status: true },
                 { name: 'Multiple Payment Gateway Options', status: false },
@@ -42,10 +42,10 @@ const EcommercePackages = () => {
                 { name: 'CRM and Email Marketing Tools', status: false },
                 { name: 'Google Analytics Integration', status: false },
                 { name: 'Training Session on Management', status: false },
-                { name: 'Hosting - Storage 10 GB SSD', status: true },
-                { name: 'Hosting - Bandwidth Unlimited', status: true },
-                { name: 'Free Domain Registration (1 Year)', status: true },
-                { name: 'Post-Launch Support 1 Month', status: true }
+                { name: 'Hosting - Storage', value: '10 GB SSD', status: true },
+                { name: 'Hosting - Bandwidth', value: 'Unlimited', status: true },
+                { name: 'Free Domain Registration', value: '1 Year', status: true },
+                { name: 'Post-Launch Support', value: '1 Month', status: true }
             ]
         },
         {
@@ -57,7 +57,7 @@ const EcommercePackages = () => {
                 { name: 'Enhanced UI/UX Design', status: true },
                 { name: 'Unlimited Product Listings', status: true },
                 { name: 'Standard Shopping Cart', status: true },
-                { name: 'Advanced Cart (Discounts/Coupons)', status: true },
+                { name: 'Advanced Cart', value: 'Discounts/Coupons', status: true },
                 { name: 'Personalized Cart Recommendations', status: false },
                 { name: 'Single Payment Gateway Integration', status: false },
                 { name: 'Multiple Payment Gateway Options', status: true },
@@ -74,10 +74,10 @@ const EcommercePackages = () => {
                 { name: 'CRM and Email Marketing Tools', status: false },
                 { name: 'Google Analytics Integration', status: true },
                 { name: 'Training Session on Management', status: false },
-                { name: 'Hosting - Storage 30 GB SSD', status: true },
-                { name: 'Hosting - Bandwidth Unlimited', status: true },
-                { name: 'Free Domain Registration (1 Year)', status: true },
-                { name: 'Post-Launch Support 3 Months', status: true }
+                { name: 'Hosting - Storage', value: '30 GB SSD', status: true },
+                { name: 'Hosting - Bandwidth', value: 'Unlimited', status: true },
+                { name: 'Free Domain Registration', value: '1 Year', status: true },
+                { name: 'Post-Launch Support', value: '3 Months', status: true }
             ]
         },
         {
@@ -89,7 +89,7 @@ const EcommercePackages = () => {
                 { name: 'Enhanced UI/UX Design', status: true },
                 { name: 'Unlimited Product Listings', status: true },
                 { name: 'Standard Shopping Cart', status: true },
-                { name: 'Advanced Cart (Discounts/Coupons)', status: true },
+                { name: 'Advanced Cart', value: 'Discounts/Coupons', status: true },
                 { name: 'Personalized Cart Recommendations', status: true },
                 { name: 'Single Payment Gateway Integration', status: false },
                 { name: 'Multiple Payment Gateway Options', status: true },
@@ -106,10 +106,10 @@ const EcommercePackages = () => {
                 { name: 'CRM and Email Marketing Tools', status: true },
                 { name: 'Google Analytics Integration', status: true },
                 { name: 'Training Session on Management', status: true },
-                { name: 'Hosting - Storage 50 GB SSD', status: true },
-                { name: 'Hosting - Bandwidth Unlimited', status: true },
-                { name: 'Free Domain Registration (1 Year)', status: true },
-                { name: 'Post-Launch Support 6 Months', status: true }
+                { name: 'Hosting - Storage', value: '50 GB SSD', status: true },
+                { name: 'Hosting - Bandwidth', value: 'Unlimited', status: true },
+                { name: 'Free Domain Registration', value: '1 Year', status: true },
+                { name: 'Post-Launch Support', value: '6 Months', status: true }
             ]
         }
     ];
@@ -130,18 +130,16 @@ const EcommercePackages = () => {
                                     <div className={styles.featuresList}>
                                         {pkg.features.map((feature, idx) => (
                                             <div key={idx} className={styles.featureItem}>
-                                                {feature.status === true ? (
+                                                {feature.status ? (
                                                     <span className={styles.checkIcon}>
                                                         <FontAwesomeIcon icon={faCheck} />
                                                     </span>
-                                                ) : feature.status === false ? (
+                                                ) : (
                                                     <span className={styles.timesIcon}>
                                                         <FontAwesomeIcon icon={faTimes} />
                                                     </span>
-                                                ) : (
-                                                    <span className={styles.featureValue}>{feature.status}</span>
                                                 )}
-                                                {feature.name}
+                                                {feature.name}&nbsp;&nbsp;{feature.value && <span className={styles.featureValue}>{feature.value}</span>}
                                             </div>
                                         ))}
                                     </div>

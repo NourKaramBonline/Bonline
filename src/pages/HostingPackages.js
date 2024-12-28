@@ -15,66 +15,54 @@ const HostingPackages = () => {
         }
     };
 
-    const allFeatures = [
-        'Number of Websites',
-        'SSD Storage',
-        'Bandwidth',
-        'Free SSL Certificates',
-        'Email Accounts',
-        'Control Panel',
-        'Uptime Guarantee',
-        'Customer Support',
-        'Domain Registration'
-    ];
-
     const packages = [
         {
             name: 'Basic Hosting',
             price: '2,500 EGP/year',
-            featureStatus: {
-                'Number of Websites': '1',
-                'SSD Storage': '10 GB',
-                'Bandwidth': 'Unlimited',
-                'Free SSL Certificates': true,
-                'Email Accounts': '1',
-                'Control Panel': 'cPanel',
-                'Uptime Guarantee': '99.9%',
-                'Customer Support': '24/7',
-                'Domain Registration': 'Free 1-year .com domain'
-            },
-            color: 'blue'
+            color: 'blue',
+            features: [
+                { name: 'Number of Websites (1)', status: true },
+                { name: 'SSD Storage 10 GB', status: true },
+                { name: 'Bandwidth Unlimited', status: true },
+                { name: 'Free SSL Certificates', status: true },
+                { name: 'Email Accounts (1)', status: true },
+                { name: 'Control Panel cPanel', status: true },
+                { name: 'Uptime Guarantee 99.9%', status: true },
+                { name: '24/7 Customer Support', status: true },
+                { name: 'Free 1-year .com Domain Registration', status: true }
+            ]
         },
         {
             name: 'Standard Hosting',
             price: '4,500 EGP/year',
-            featureStatus: {
-                'Number of Websites': 'Up to 5',
-                'SSD Storage': '30 GB',
-                'Bandwidth': 'Unlimited',
-                'Free SSL Certificates': true,
-                'Email Accounts': '5',
-                'Control Panel': 'cPanel',
-                'Uptime Guarantee': '99.9%',
-                'Customer Support': '24/7',
-                'Domain Registration': 'Free 1-year .com domain'
-            },
-            color: 'green'
+            color: 'green',
+            features: [
+                { name: 'Number of Websites (Up to 5)', status: true },
+                { name: 'SSD Storage 30 GB', status: true },
+                { name: 'Bandwidth Unlimited', status: true },
+                { name: 'Free SSL Certificates', status: true },
+                { name: 'Email Accounts (5)', status: true },
+                { name: 'Control Panel cPanel', status: true },
+                { name: 'Uptime Guarantee 99.9%', status: true },
+                { name: '24/7 Customer Support', status: true },
+                { name: 'Free 1-year .com Domain Registration', status: true }
+            ]
         },
         {
             name: 'Premium Hosting',
             price: '6,500 EGP/year',
-            featureStatus: {
-                'Number of Websites': 'Unlimited',
-                'SSD Storage': '100 GB',
-                'Bandwidth': 'Unlimited',
-                'Free SSL Certificates': true,
-                'Email Accounts': 'Unlimited',
-                'Control Panel': 'cPanel',
-                'Uptime Guarantee': '99.9%',
-                'Customer Support': '24/7 Priority Support',
-                'Domain Registration': 'Free 1-year .com domain'
-            },
-            color: 'red'
+            color: 'red',
+            features: [
+                { name: 'Number of Websites (Unlimited)', status: true },
+                { name: 'SSD Storage 100 GB', status: true },
+                { name: 'Bandwidth Unlimited', status: true },
+                { name: 'Free SSL Certificates', status: true },
+                { name: 'Email Accounts (Unlimited)', status: true },
+                { name: 'Control Panel cPanel', status: true },
+                { name: 'Uptime Guarantee 99.9%', status: true },
+                { name: '24/7 Priority Customer Support', status: true },
+                { name: 'Free 1-year .com Domain Registration', status: true }
+            ]
         }
     ];
 
@@ -92,20 +80,18 @@ const HostingPackages = () => {
                                 </div>
                                 <div className={styles.packageContent}>
                                     <div className={styles.featuresList}>
-                                        {allFeatures.map((feature, idx) => (
+                                        {pkg.features.map((feature, idx) => (
                                             <div key={idx} className={styles.featureItem}>
-                                                {pkg.featureStatus[feature] === true ? (
+                                                {feature.status ? (
                                                     <span className={styles.checkIcon}>
                                                         <FontAwesomeIcon icon={faCheck} />
                                                     </span>
-                                                ) : pkg.featureStatus[feature] === false ? (
+                                                ) : (
                                                     <span className={styles.timesIcon}>
                                                         <FontAwesomeIcon icon={faTimes} />
                                                     </span>
-                                                ) : (
-                                                    <span className={styles.featureValue}>{pkg.featureStatus[feature]}</span>
                                                 )}
-                                                {feature}
+                                                {feature.name}
                                             </div>
                                         ))}
                                     </div>
@@ -113,7 +99,7 @@ const HostingPackages = () => {
                                         onClick={handleLearnMore}
                                         className={`${styles.buyButton} ${styles[`btn${pkg.color}`]}`}
                                     >
-                                        Learn More
+                                        LEARN MORE
                                     </button>
                                 </div>
                             </div>

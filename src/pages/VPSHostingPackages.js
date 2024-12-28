@@ -23,18 +23,18 @@ const VPSHostingPackages = () => {
             price: '225 EGP/month',
             color: 'blue',
             features: [
-                { name: 'vCPU Cores', status: '4' },
-                { name: 'RAM', status: '6 GB' },
-                { name: 'Storage Options', status: 'NVMe or 400 GB SSD' },
-                { name: 'Snapshots', status: '1' },
-                { name: 'Bandwidth', status: '32 TB' },
-                { name: 'Incoming Traffic', status: 'Unlimited' },
-                { name: 'Control Panel', status: 'Optional' },
-                { name: 'DDoS Protection', status: 'Included' },
-                { name: 'Full Root Access', status: 'Yes' },
-                { name: 'Operating System', status: 'Linux/Windows' },
-                { name: 'Data Center Locations', status: 'Multiple Regions' },
-                { name: 'Support', status: '24/7 Basic Support' }
+                { name: 'vCPU Cores', value: '4', status: true },
+                { name: 'RAM', value: '6 GB', status: true },
+                { name: 'Storage Options', value: 'NVMe or 400 GB SSD', status: true },
+                { name: 'Snapshots', value: '1', status: true },
+                { name: 'Bandwidth', value: '32 TB', status: true },
+                { name: 'Incoming Traffic', value: 'Unlimited', status: true },
+                { name: 'Control Panel', value: 'Optional', status: true },
+                { name: 'DDoS Protection', value: 'Included', status: true },
+                { name: 'Full Root Access', value: 'Yes', status: true },
+                { name: 'Operating System', value: 'Linux/Windows', status: true },
+                { name: 'Data Center Locations', value: 'Multiple Regions', status: true },
+                { name: 'Support', value: '24/7 Basic Support', status: true }
             ]
         },
         {
@@ -42,18 +42,18 @@ const VPSHostingPackages = () => {
             price: '563 EGP/month',
             color: 'blue',
             features: [
-                { name: 'vCPU Cores', status: '6' },
-                { name: 'RAM', status: '16 GB' },
-                { name: 'Storage Options', status: 'NVMe or 400 GB SSD' },
-                { name: 'Snapshots', status: '2' },
-                { name: 'Bandwidth', status: '32 TB' },
-                { name: 'Incoming Traffic', status: 'Unlimited' },
-                { name: 'Control Panel', status: 'Optional' },
-                { name: 'DDoS Protection', status: 'Included' },
-                { name: 'Full Root Access', status: 'Yes' },
-                { name: 'Operating System', status: 'Linux/Windows' },
-                { name: 'Data Center Locations', status: 'Multiple Regions' },
-                { name: 'Support', status: '24/7 Basic Support' }
+                { name: 'vCPU Cores', value: '6', status: true },
+                { name: 'RAM', value: '16 GB', status: true },
+                { name: 'Storage Options', value: 'NVMe or 400 GB SSD', status: true },
+                { name: 'Snapshots', value: '2', status: true },
+                { name: 'Bandwidth', value: '32 TB', status: true },
+                { name: 'Incoming Traffic', value: 'Unlimited', status: true },
+                { name: 'Control Panel', value: 'Optional', status: true },
+                { name: 'DDoS Protection', value: 'Included', status: true },
+                { name: 'Full Root Access', value: 'Yes', status: true },
+                { name: 'Operating System', value: 'Linux/Windows', status: true },
+                { name: 'Data Center Locations', value: 'Multiple Regions', status: true },
+                { name: 'Support', value: '24/7 Basic Support', status: true }
             ]
         },
         {
@@ -61,18 +61,18 @@ const VPSHostingPackages = () => {
             price: '788 EGP/month',
             color: 'green',
             features: [
-                { name: 'vCPU Cores', status: '8' },
-                { name: 'RAM', status: '24 GB' },
-                { name: 'Storage Options', status: 'NVMe or 1.2 TB SSD' },
-                { name: 'Snapshots', status: '2' },
-                { name: 'Bandwidth', status: '32 TB' },
-                { name: 'Incoming Traffic', status: 'Unlimited' },
-                { name: 'Control Panel', status: 'Optional' },
-                { name: 'DDoS Protection', status: 'Included' },
-                { name: 'Full Root Access', status: 'Yes' },
-                { name: 'Operating System', status: 'Linux/Windows' },
-                { name: 'Data Center Locations', status: 'Multiple Regions' },
-                { name: 'Support', status: '24/7 Basic Support' }
+                { name: 'vCPU Cores', value: '8', status: true },
+                { name: 'RAM', value: '24 GB', status: true },
+                { name: 'Storage Options', value: 'NVMe or 1.2 TB SSD', status: true },
+                { name: 'Snapshots', value: '2', status: true },
+                { name: 'Bandwidth', value: '32 TB', status: true },
+                { name: 'Incoming Traffic', value: 'Unlimited', status: true },
+                { name: 'Control Panel', value: 'Optional', status: true },
+                { name: 'DDoS Protection', value: 'Included', status: true },
+                { name: 'Full Root Access', value: 'Yes', status: true },
+                { name: 'Operating System', value: 'Linux/Windows', status: true },
+                { name: 'Data Center Locations', value: 'Multiple Regions', status: true },
+                { name: 'Support', value: '24/7 Basic Support', status: true }
             ]
         },
         {
@@ -80,18 +80,18 @@ const VPSHostingPackages = () => {
             price: '1,238 EGP/month',
             color: 'green',
             features: [
-                { name: 'vCPU Cores', status: '12' },
-                { name: 'RAM', status: '48 GB' },
-                { name: 'Storage Options', status: 'NVMe or 1.6 TB SSD' },
-                { name: 'Snapshots', status: '3' },
-                { name: 'Bandwidth', status: '32 TB' },
-                { name: 'Incoming Traffic', status: 'Unlimited' },
-                { name: 'Control Panel', status: 'Optional' },
-                { name: 'DDoS Protection', status: 'Included' },
-                { name: 'Full Root Access', status: 'Yes' },
-                { name: 'Operating System', status: 'Linux/Windows' },
-                { name: 'Data Center Locations', status: 'Multiple Regions' },
-                { name: 'Support', status: '24/7 Basic Support' }
+                { name: 'vCPU Cores', value: '12', status: true },
+                { name: 'RAM', value: '48 GB', status: true },
+                { name: 'Storage Options', value: 'NVMe or 1.6 TB SSD', status: true },
+                { name: 'Snapshots', value: '3', status: true },
+                { name: 'Bandwidth', value: '32 TB', status: true },
+                { name: 'Incoming Traffic', value: 'Unlimited', status: true },
+                { name: 'Control Panel', value: 'Optional', status: true },
+                { name: 'DDoS Protection', value: 'Included', status: true },
+                { name: 'Full Root Access', value: 'Yes', status: true },
+                { name: 'Operating System', value: 'Linux/Windows', status: true },
+                { name: 'Data Center Locations', value: 'Multiple Regions', status: true },
+                { name: 'Support', value: '24/7 Basic Support', status: true }
             ]
         },
         {
@@ -99,18 +99,18 @@ const VPSHostingPackages = () => {
             price: '1,575 EGP/month',
             color: 'red',
             features: [
-                { name: 'vCPU Cores', status: '16' },
-                { name: 'RAM', status: '64 GB' },
-                { name: 'Storage Options', status: 'NVMe or 2 TB SSD' },
-                { name: 'Snapshots', status: '3' },
-                { name: 'Bandwidth', status: '32 TB' },
-                { name: 'Incoming Traffic', status: 'Unlimited' },
-                { name: 'Control Panel', status: 'Optional' },
-                { name: 'DDoS Protection', status: 'Included' },
-                { name: 'Full Root Access', status: 'Yes' },
-                { name: 'Operating System', status: 'Linux/Windows' },
-                { name: 'Data Center Locations', status: 'Multiple Regions' },
-                { name: 'Support', status: '24/7 Basic Support' }
+                { name: 'vCPU Cores', value: '16', status: true },
+                { name: 'RAM', value: '64 GB', status: true },
+                { name: 'Storage Options', value: 'NVMe or 2 TB SSD', status: true },
+                { name: 'Snapshots', value: '3', status: true },
+                { name: 'Bandwidth', value: '32 TB', status: true },
+                { name: 'Incoming Traffic', value: 'Unlimited', status: true },
+                { name: 'Control Panel', value: 'Optional', status: true },
+                { name: 'DDoS Protection', value: 'Included', status: true },
+                { name: 'Full Root Access', value: 'Yes', status: true },
+                { name: 'Operating System', value: 'Linux/Windows', status: true },
+                { name: 'Data Center Locations', value: 'Multiple Regions', status: true },
+                { name: 'Support', value: '24/7 Basic Support', status: true }
             ]
         },
         {
@@ -118,18 +118,18 @@ const VPSHostingPackages = () => {
             price: '2,888 EGP/month',
             color: 'red',
             features: [
-                { name: 'vCPU Cores', status: '24' },
-                { name: 'RAM', status: '120 GB' },
-                { name: 'Storage Options', status: 'NVMe or 2.4 TB SSD' },
-                { name: 'Snapshots', status: '3' },
-                { name: 'Bandwidth', status: '32 TB' },
-                { name: 'Incoming Traffic', status: 'Unlimited' },
-                { name: 'Control Panel', status: 'Optional' },
-                { name: 'DDoS Protection', status: 'Included' },
-                { name: 'Full Root Access', status: 'Yes' },
-                { name: 'Operating System', status: 'Linux/Windows' },
-                { name: 'Data Center Locations', status: 'Multiple Regions' },
-                { name: 'Support', status: '24/7 Basic Support' }
+                { name: 'vCPU Cores', value: '24', status: true },
+                { name: 'RAM', value: '120 GB', status: true },
+                { name: 'Storage Options', value: 'NVMe or 2.4 TB SSD', status: true },
+                { name: 'Snapshots', value: '3', status: true },
+                { name: 'Bandwidth', value: '32 TB', status: true },
+                { name: 'Incoming Traffic', value: 'Unlimited', status: true },
+                { name: 'Control Panel', value: 'Optional', status: true },
+                { name: 'DDoS Protection', value: 'Included', status: true },
+                { name: 'Full Root Access', value: 'Yes', status: true },
+                { name: 'Operating System', value: 'Linux/Windows', status: true },
+                { name: 'Data Center Locations', value: 'Multiple Regions', status: true },
+                { name: 'Support', value: '24/7 Basic Support', status: true }
             ]
         }
     ];
@@ -153,18 +153,16 @@ const VPSHostingPackages = () => {
                                     <div className={styles.featuresList}>
                                         {pkg.features.map((feature, idx) => (
                                             <div key={idx} className={styles.featureItem}>
-                                                {feature.status === true ? (
+                                                {feature.status ? (
                                                     <span className={styles.checkIcon}>
                                                         <FontAwesomeIcon icon={faCheck} />
                                                     </span>
-                                                ) : feature.status === false ? (
+                                                ) : (
                                                     <span className={styles.timesIcon}>
                                                         <FontAwesomeIcon icon={faTimes} />
                                                     </span>
-                                                ) : (
-                                                    <span className={styles.featureValue}>{feature.status}</span>
                                                 )}
-                                                {feature.name}
+                                                {feature.name}&nbsp;&nbsp;{feature.value && <span className={styles.featureValue}>{feature.value}</span>}
                                             </div>
                                         ))}
                                     </div>

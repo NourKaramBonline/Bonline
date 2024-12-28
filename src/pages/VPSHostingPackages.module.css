@@ -105,12 +105,9 @@
 }
 
 .featureValue {
-    color: #3498db;
-    margin-right: 10px;
+    color: #007bff;
+    margin-left: 5px;
     font-weight: 500;
-    min-width: 20px;
-    display: flex;
-    align-items: center;
 }
 
 .buyButton {

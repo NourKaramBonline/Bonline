@@ -29,7 +29,10 @@ const Footer = () => {
                             <h5 className="text-white mb-4">Quick Links</h5>
                             <ul className="list-unstyled">
                                 <li><a href="/" className="footer-link">Home</a></li>
+                                <li><a href="/about" className="footer-link">About</a></li>
                                 <li><a href="/clients" className="footer-link">Clients</a></li>
+                                <li><a href="/services" className="footer-link">Services</a></li>
+                                <li><a href="/contact" className="footer-link">Contact</a></li>
                             </ul>
                         </div>
                         <div className="col-lg-3 col-md-6 mb-4 mb-lg-0">

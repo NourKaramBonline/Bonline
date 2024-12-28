@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="32" height="32" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="250" cy="250" r="250" fill="#1e3c72"/>
+    <text x="140" y="300" fill="white" font-family="Arial" font-size="220" font-weight="bold">{b}</text>
+    <circle cx="250" cy="380" r="15" fill="white"/>
+    <circle cx="290" cy="380" r="15" fill="white"/>
+    <circle cx="210" cy="380" r="15" fill="white"/>
+</svg>

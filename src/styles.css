@@ -524,10 +524,6 @@ body {
     transition: color 0.3s ease;
 }
 
-.newsletter-description:hover {
-    color: #4a90e2;
-}
-
 /* Services Section */
 .services-section {
     background: linear-gradient(45deg, #2c3e50, #3498db);

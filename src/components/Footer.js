@@ -63,7 +63,7 @@ const Footer = () => {
                             <p className="mb-0"> {currentYear} Your Company. All rights reserved.</p>
                         </div>
                         <div className="col-md-6 text-center text-md-end">
-                            <p className="mb-0">Made By <FontAwesomeIcon icon={faHeart} className="text-danger mx-1" /> Bonline</p>
+                            <p className="mb-0">Made By <FontAwesomeIcon icon={faHeart} className="text-danger mx-1" /> B-online</p>
                         </div>
                     </div>
                 </div>

@@ -130,8 +130,8 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    padding-top: 0; /* Remove extra padding */
-    margin-top: 0; /* Remove margin */
+    padding: 0;
+    margin: 0;
     position: relative;
 }
 
@@ -1001,8 +1001,8 @@ body {
 
 /* Main Content Styles */
 .main-content {
-    padding-top: 80px; /* Height of the navbar */
-    min-height: calc(100vh - 400px); /* Full viewport height minus footer height */
+    padding-top: 0;
+    min-height: calc(100vh - 400px);
 }
 
 .clients-section {

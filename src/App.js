@@ -24,6 +24,7 @@ import MobileAppPackages from './pages/MobileAppPackages';
 import CustomSoftwarePackages from './pages/CustomSoftwarePackages';
 import ResellerHostingPackages from './pages/ResellerHostingPackages';
 import VPSHostingPackages from './pages/VPSHostingPackages';
+import WebsiteCreationPackages from './pages/WebsiteCreationPackages';
 import Layout from './components/Layout';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
@@ -264,6 +265,21 @@ function App() {
                                                 </div>
                                             </div>
                                         </div>
+                                        <div className="col-md-3 mb-4">
+                                            <div className="card service-card h-100">
+                                                <div className="card-body text-center">
+                                                    <FontAwesomeIcon icon={faCode} className="service-icon mb-3" />
+                                                    <h5 className="card-title">Website Creation Packages</h5>
+                                                    <p>Professional website development solutions for your business needs.</p>
+                                                    <button 
+                                                        className='btn btn-outline-primary'
+                                                        onClick={() => history.push('/website-creation-packages')}
+                                                    >
+                                                        Learn More <FontAwesomeIcon icon={faArrowRight} className="ms-2" />
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </section>
@@ -409,6 +425,7 @@ function App() {
                     <Route path="/digital-marketing-integration-seo-packages" component={DigitalMarketingIntegrationSEOPackages} />
                     <Route path="/mobile-apps-packages" component={MobileAppPackages} />
                     <Route path="/custom-software-packages" component={CustomSoftwarePackages} />
+                    <Route path="/website-creation-packages" component={WebsiteCreationPackages} />
                 </Switch>
             </Layout>
         </div>

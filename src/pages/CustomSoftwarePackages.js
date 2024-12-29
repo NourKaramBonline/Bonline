@@ -26,7 +26,7 @@ const CustomSoftwarePackages = () => {
                 { name: 'Estimated Development Hours', status: '350 Hours' },
                 { name: 'Software Complexity', status: 'Simple, user-friendly' },
                 { name: 'Number of Core Functionalities', status: 'Up to 5' },
-                { name: 'User Interface Design', status: 'Standard' },
+                { name: 'Interface Design', status: 'Standard' },
                 { name: 'Database Integration', status: 'Basic' },
                 { name: 'Security Features', status: 'Essential' },
                 { name: 'Third-Party API Integration', status: false },
@@ -44,7 +44,7 @@ const CustomSoftwarePackages = () => {
                 { name: 'Estimated Development Hours', status: '700 Hours' },
                 { name: 'Software Complexity', status: 'Moderately complex' },
                 { name: 'Number of Core Functionalities', status: 'Up to 10' },
-                { name: 'User Interface Design', status: 'Custom with enhanced UX' },
+                { name: 'Interface Design', status: 'Custom with enhanced UX' },
                 { name: 'Database Integration', status: 'Advanced' },
                 { name: 'Security Features', status: 'Role-based access control' },
                 { name: 'Third-Party API Integration', status: true },
@@ -62,7 +62,7 @@ const CustomSoftwarePackages = () => {
                 { name: 'Estimated Development Hours', status: '1,400 Hours' },
                 { name: 'Software Complexity', status: 'Enterprise-grade, complex' },
                 { name: 'Number of Core Functionalities', status: 'Unlimited' },
-                { name: 'User Interface Design', status: 'Bespoke with advanced UX/UI' },
+                { name: 'Interface Design', status: 'Bespoke with advanced UX/UI' },
                 { name: 'Database Integration', status: 'Robust architecture' },
                 { name: 'Security Features', status: 'Advanced (encryption, MFA)' },
                 { name: 'Third-Party API Integration', status: 'Multiple services' },
@@ -93,7 +93,7 @@ const CustomSoftwarePackages = () => {
                                     <div className={styles.featuresList}>
                                         {pkg.features.map((feature, idx) => (
                                             <div key={idx} className={styles.featureItem}>
-                                                {feature.status === true ? (
+                                                {feature.status === true || typeof feature.status === 'string' ? (
                                                     <span className={styles.checkIcon}>
                                                         <FontAwesomeIcon icon={faCheck} />
                                                     </span>
@@ -105,6 +105,9 @@ const CustomSoftwarePackages = () => {
                                                     <span className={styles.featureValue}>{feature.status}</span>
                                                 )}
                                                 {feature.name}
+                                                {typeof feature.status === 'string' && 
+                                                    <span className={styles.featureValue}> &nbsp;{feature.status}</span>
+                                                }
                                             </div>
                                         ))}
                                     </div>
